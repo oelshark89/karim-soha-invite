@@ -1,0 +1,3072 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Karim &amp; Soha &mdash; Engagement</title>
+    <meta
+      name="description"
+      content="Karim &amp; Soha are celebrating their engagement on Friday, 11 September 2026 at Amoun, Sahel — North Coast."
+    />
+    <meta name="theme-color" content="#FFF8F3" />
+    <meta property="og:title" content="We&rsquo;re engaged — Karim &amp; Soha" />
+    <meta
+      property="og:description"
+      content="Friday, 11 September 2026 · Amoun, Sahel — North Coast"
+    />
+    <meta property="og:type" content="website" />
+    <!-- Absolute URLs, because WhatsApp and iMessage do not resolve relative
+         og:image paths — a relative one previews as no image at all, which is
+         indistinguishable from having set no tag. Update all three if the site
+         ever moves off this host. -->
+    <meta
+      property="og:url"
+      content="https://oelshark89.github.io/karim-soha-invite/"
+    />
+    <meta
+      property="og:image"
+      content="https://oelshark89.github.io/karim-soha-invite/og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="A wax seal carrying Karim and Soha&rsquo;s monogram in gold, on an embossed envelope."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- A private invitation on a public host. The URL is unlisted, but nothing
+         stops a crawler that finds it from putting the couple's names and the
+         venue into search results, so say no explicitly. robots.txt says the
+         same thing again for crawlers that never parse the HTML. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ============================================================
+   PALETTES — six Pantones mapped onto roles, soft → bold.
+   Scene tokens drive the canvas sunset. Attribute is
+   data-palette, NOT data-theme (hosts stamp that for dark mode).
+   ============================================================ */
+      :root,
+      :root[data-palette="shell"] {
+        --ground: #fff8f3;
+        --ground-grad: linear-gradient(172deg, #fffbf8 0%, #fff0e6 100%);
+        --panel: rgba(255, 255, 255, 0.55);
+        --heading: #c22f5f;
+        --ink: #4a2a33;
+        --ink-soft: #7b5a64;
+        --accent: #df5f2b;
+        --rule: rgba(194, 47, 95, 0.22);
+        --seal-a: #d1396c;
+        --seal-b: #9a2549;
+        --paper-a: #8e2244;
+        --paper-b: #571528;
+        --gold-a: #f7d98f;
+        --gold-b: #c1913c;
+        --glow: rgba(242, 119, 77, 0.3);
+        --sky-top: #4e2e3a;
+        --sky-mid: #b4566e;
+        --sky-horizon: #f2915f;
+        --sun: #ffe1a8;
+        --sea: #7a4453;
+        --sea-deep: #3e2330;
+      }
+      :root[data-palette="coral"] {
+        --ground: #fff1ea;
+        --ground-grad: linear-gradient(172deg, #fff6f1 0%, #ffe4d6 100%);
+        --panel: rgba(255, 255, 255, 0.5);
+        --heading: #c0421d;
+        --ink: #4e2a22;
+        --ink-soft: #805748;
+        --accent: #c22f5f;
+        --rule: rgba(192, 66, 29, 0.24);
+        --seal-a: #f2774d;
+        --seal-b: #b8441c;
+        --paper-a: #8e3118;
+        --paper-b: #58190b;
+        --gold-a: #ffd98a;
+        --gold-b: #c48a35;
+        --glow: rgba(209, 57, 108, 0.28);
+        --sky-top: #52281f;
+        --sky-mid: #c0522f;
+        --sky-horizon: #f98a4e;
+        --sun: #ffd98a;
+        --sea: #7c3a2a;
+        --sea-deep: #3f1f18;
+      }
+      :root[data-palette="sorbet"] {
+        --ground: #ffe9f1;
+        --ground-grad: linear-gradient(172deg, #fff2f7 0%, #ffd9e7 100%);
+        --panel: rgba(255, 255, 255, 0.48);
+        --heading: #a32450;
+        --ink: #54202f;
+        --ink-soft: #8a5566;
+        --accent: #c95000;
+        --rule: rgba(163, 36, 80, 0.24);
+        --seal-a: #fc6e00;
+        --seal-b: #b84c00;
+        --paper-a: #8a1e44;
+        --paper-b: #540f28;
+        --gold-a: #ffd97a;
+        --gold-b: #c58f2f;
+        --glow: rgba(252, 110, 0, 0.3);
+        --sky-top: #5a2340;
+        --sky-mid: #c93a76;
+        --sky-horizon: #fc8a5a;
+        --sun: #ffd97a;
+        --sea: #7e2a55;
+        --sea-deep: #3f1330;
+      }
+      :root[data-palette="sunset"] {
+        --ground: #963049;
+        --paper-a: #8a2e0a;
+        --paper-b: #501800;
+        --gold-a: #fdda26;
+        --gold-b: #bf9612;
+        --ground-grad: linear-gradient(
+          168deg,
+          #a63d00 0%,
+          #963049 58%,
+          #7c1b3d 100%
+        );
+        --panel: rgba(255, 243, 232, 0.1);
+        --heading: #ffd55d;
+        --ink: #fff1e4;
+        --ink-soft: rgba(255, 241, 228, 0.9);
+        --accent: #fdda26;
+        --rule: rgba(255, 213, 93, 0.34);
+        /* Not the Palette's yellow: wax is not yellow, and a gold Monogram
+           on olive wax has no contrast. Orange Slices in shadow. */
+        --seal-a: #a03610;
+        --seal-b: #6a1f04;
+        --glow: rgba(253, 218, 38, 0.34);
+        --sky-top: #58200e;
+        --sky-mid: #d14a1e;
+        --sky-horizon: #fc6e00;
+        --sun: #fdda26;
+        --sea: #8c2c34;
+        --sea-deep: #43121f;
+      }
+      :root[data-palette="goodvibes"] {
+        --ground: #9a2149;
+        --paper-a: #8b1b41;
+        --paper-b: #530e26;
+        --gold-a: #ffd55d;
+        --gold-b: #c69a22;
+        --ground-grad: linear-gradient(168deg, #9a2149 0%, #701533 100%);
+        --panel: rgba(255, 240, 246, 0.1);
+        --heading: #ffd55d;
+        --ink: #ffeff5;
+        --ink-soft: rgba(255, 239, 245, 0.9);
+        --accent: #fd86bc;
+        --rule: rgba(253, 134, 188, 0.36);
+        /* Same reason as sunset: 926 C in shadow, not the Palette's yellow. */
+        --seal-a: #a52050;
+        --seal-b: #6b1230;
+        --glow: rgba(253, 134, 188, 0.34);
+        --sky-top: #4e1030;
+        --sky-mid: #b72c5b;
+        --sky-horizon: #fd86bc;
+        --sun: #ffd55d;
+        --sea: #71184a;
+        --sea-deep: #360a25;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+      }
+      html.locked,
+      html.locked body {
+        overflow: hidden;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      body {
+        font-family: "Jost", system-ui, sans-serif;
+        font-weight: 300;
+        background: var(--ground);
+        background-image: var(--ground-grad);
+        background-attachment: fixed;
+        color: var(--ink);
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+        transition:
+          background-color 0.6s ease,
+          color 0.6s ease;
+        overflow-x: hidden;
+      }
+
+      /* ---------- type ---------- */
+      .script {
+        font-family: "Ephesis", cursive;
+        font-weight: 400;
+        line-height: 1;
+      }
+      /* ---------- micro-caps labels: one treatment, not four ----------
+   `.eyebrow`, the day above each of the two dates and the STARTS/ENDS
+   pair were 0.66rem/0.36em, 0.68rem/0.44em, 0.64rem/0.42em and
+   0.60rem/0.32em — four near-misses of the same thing. Near-misses read
+   as sloppiness; they do not read as a system, and this family of labels
+   is the most repeated element on the page.
+
+   They are Fraunces now. The Hero's kicker was already Fraunces while
+   every label under it was Jost, so one role was speaking in two fonts —
+   and a geometric sans in wide tracking reads as a UI label where serif
+   caps read as engraved invitation lettering.
+
+   `opsz 9` is the point. Fraunces carries an optical size axis and this
+   is what it is for: at the small end the hairlines thicken and the
+   counters open, which is the difference between a serif that survives
+   at 12px under 0.3em of tracking and one that goes thin and spidery.
+   Everything else on the page sits at the display end (120, 144), and
+   these labels were inheriting the default rather than asking for 9.
+
+   Two values, not one: `.eyebrow` and the day are structural labels and
+   take `ink`; STARTS/ENDS is a caption on a caption and stays `ink-soft`.
+   Previously all four sat at `ink-soft`, so nothing outranked anything.
+   ---------------------------------------------------------------- */
+      .eyebrow,
+      .hero-date .day,
+      .card-date .day,
+      .time .l {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 500;
+        font-variation-settings: "opsz" 9;
+        font-size: 0.74rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+      .eyebrow {
+        color: var(--ink);
+      }
+      /* Same voice, own sizes. These are the label family too — they just are
+   not all one size — and the button, the scroll cue and the Hero kicker
+   were the last things still setting tracked caps in Jost. */
+      .btn,
+      .scroll-cue span,
+      .footer-date,
+      .hero-kicker {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings: "opsz" 9;
+      }
+      p {
+        color: var(--ink-soft);
+        font-size: 1.04rem;
+        text-wrap: pretty;
+      }
+      a {
+        color: inherit;
+      }
+      .sec-title {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-variation-settings: "opsz" 120;
+        color: var(--heading);
+        font-size: clamp(1.7rem, 5.6vw, 2.3rem);
+        letter-spacing: 0.01em;
+        line-height: 1.2;
+        text-wrap: balance;
+      }
+
+      /* Rhythm. Three tiers, not one spacing value repeated seven times:
+   the essentials breathe, the notes are compact. Everything below the
+   hero keys off these tokens rather than per-section overrides. */
+      :root {
+        --band: clamp(3rem, 6.5vw, 4.2rem); /* when, where, what to wear */
+        --band-lead: clamp(
+          2.6rem,
+          5vw,
+          3.4rem
+        ); /* the intro, sitting under the hero */
+        --card-py: clamp(2rem, 6vw, 2.9rem);
+        --card-px: clamp(1.4rem, 5vw, 2.4rem);
+      }
+      section {
+        padding: var(--band) 1.5rem;
+        position: relative;
+      }
+      .tier-lead {
+        padding-block: var(--band-lead);
+      }
+      .tier-lead p {
+        text-wrap: balance;
+      }
+      .wrap {
+        max-width: 34rem;
+        margin-inline: auto;
+        text-align: center;
+      }
+      .stack {
+        display: grid;
+        gap: 1.1rem;
+        justify-items: center;
+      }
+
+      /* ---------- horizon divider (the sunset motif, reduced) ---------- */
+      .horizon {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: min(240px, 60vw);
+        color: var(--accent);
+        opacity: 0.9;
+      }
+      .horizon i {
+        flex: 1;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.45;
+      }
+      .horizon b {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: currentColor;
+        flex: none;
+      }
+      /* Not inside a section, so it carries its own breathing room. */
+      .tier-close {
+        margin-inline: auto;
+        margin-block: clamp(1rem, 3vw, 1.8rem);
+      }
+
+      /* ============================================================
+   ENVELOPE — a landscape envelope on a dark ground, which the camera
+   pushes into until it fills the frame.
+
+   The reference (a competing invitation product; its URL and the frame
+   analysis are in docs/DESIGN-LOG.md, which is deliberately not published
+   with this file) is a pre-rendered 1080x1920 MP4 that fills the viewport:
+   the URL named a real couple's own invitation page and this file is served
+   publicly, which is the whole reason it is not repeated here. A very
+   slow camera push on a closed envelope, a light kindling under the wax
+   seal from ~2.2s, and then the whole overlay dissolving at 3.375s.
+   Nothing mechanical ever opens — verified frame by frame down to frame
+   81 of 81 at 3.366s. See ADR 0004.
+
+   The framing was a bounded card that the camera grew into cover, and it
+   was wrong: on a phone that card was a 27%-height band with black above
+   and below it, and no amount of push fixed it, because the push started
+   from a stamp. The card now COVERS at rest — full height, cropped left
+   and right — and the push is a camera move on top of a shot that is
+   already framed. See ADR 0005, and `--card-w` below for why the cover
+   is capped at 1.5 viewport widths.
+
+   What survives from the bounded version, and must: the seams are locked
+   at 45 degrees INSIDE the card, and everything the card carries is sized
+   off `--card-w`, never off the viewport. Between them that is what lets
+   the card overflow the screen without the envelope deforming — the last
+   full-bleed attempt drew its seams corner to corner, took the V's angle
+   from the viewport, and on a phone was a tall diamond. Overflowing a 3:2
+   card is not the same thing as stretching one, and the difference is
+   these two rules.
+   ============================================================ */
+      #envelope {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        overflow: hidden;
+        /* The ground is black alpha over the Theme's own paper, never a
+     literal — same constraint as everything else here (ADR 0001), so the
+     dark still carries the Theme's hue. The radial is the pool the
+     envelope sits in: lighter under the card, falling off to the corners,
+     which gives the card's shadow somewhere to land. */
+        background:
+          radial-gradient(
+            ellipse 62% 54% at 50% 50%,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.78) 46%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          var(--paper-b);
+        /* The card, and everything sized off it.
+
+     The card now COVERS the viewport rather than sitting inside it:
+     `max(100vw, 150vh)` is the cover width of a 3:2 box, so it is full
+     height with a crop left and right, or full width with a crop top and
+     bottom, whichever binds. That is the zoom.
+
+     The cap is the interesting number. The V's base sits at 50% +/-
+     33.333% of the card, so the flap tips are 33.333% of the card width
+     out from its centre; set the card to 1.5 viewport widths and that is
+     exactly 50vw — the tips land precisely on the screen edges. Past
+     1.5vw they leave the frame, the side pentagons go with them, and what
+     is left is a bare X with a seal on it. So: cover, capped at 1.5vw.
+     Landscape screens are under the cap and get full height. A portrait
+     phone hits it and gets an envelope that spans the full width, tip to
+     tip, at roughly twice the height it used to have.
+
+     JS re-sets this in px off the fixed layer's own measured height —
+     100vh on a phone is the URL-bar-hidden height, which would size the
+     card for a viewport taller than the one the guest is looking at. */
+        --card-w: min(max(100vw, 150vh), 150vw);
+        --seal-d: calc(var(--card-w) * 0.225);
+        transition: opacity 1s ease;
+      }
+      #envelope.gone {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #envelope.open {
+        pointer-events: none;
+      }
+      /* The wax settles into the paper on the click. Small, and the only
+   thing on the screen that answers the press immediately — the light
+   still needs half a second to kindle, and half a second of a dead
+   screen after a click reads as a broken button. */
+      #envelope.open .seal-btn {
+        pointer-events: none;
+        scale: 0.965;
+      }
+
+      /* The card, and the camera in one. A 3:2 envelope already covering the
+   ground, scaling about its own centre.
+
+   `--cam-end` used to be a measured cover factor, because the card
+   started smaller than the viewport and the push had to close that gap.
+   It no longer does — the card covers at rest — so the push is a plain
+   camera move on top of a shot that is already framed, and it is a
+   constant. `sizeCamera()` still writes it so the two live together.
+
+   One transform on one promoted layer, so the filtered ornament
+   underneath is rasterised once and then scaled rather than re-rendered
+   every frame — the difference between this being free and being
+   unwatchable on a phone. Linear, because theirs is: a camera creeping in
+   at a constant rate for 3.375s. */
+      .env-cam {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: var(--card-w);
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+        border-radius: calc(var(--card-w) * 0.006);
+        box-shadow:
+          0 calc(var(--card-w) * 0.035) calc(var(--card-w) * 0.09)
+            rgba(0, 0, 0, 0.6),
+          0 calc(var(--card-w) * 0.005) calc(var(--card-w) * 0.014)
+            rgba(0, 0, 0, 0.5);
+        will-change: transform;
+        transform: scale(1);
+        transition: transform 3.375s linear;
+      }
+      #envelope.open .env-cam {
+        transform: scale(var(--cam-end, 1.3));
+      }
+
+      .env-paper {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 74% 60% at 38% 30%,
+            var(--paper-a) 0%,
+            rgba(0, 0, 0, 0) 72%
+          ),
+          linear-gradient(152deg, var(--paper-a) 0%, var(--paper-b) 100%);
+      }
+      /* The embossed relief. `overlay` at mid-grey is a no-op, so the flat
+   parts of the relief leave the paper alone and only the ornament reads —
+   which is why the lighting-color is tuned to land flat areas on 0x80. */
+      /* `hard-light`, not `overlay`. Both are a no-op at mid-grey — which is
+   the whole reason the relief can be a grey height-field and still let the
+   Theme through (ADR 0001) — but `overlay` keys off the *base*, and on
+   cardstock this dark that crushes every highlight the carving throws.
+   `hard-light` keys off the relief instead, so a raised edge screens up
+   and a groove multiplies down. Same constraint, twice the range. */
+      .env-orn {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: hard-light;
+        opacity: 0.9;
+      }
+
+      /* The four flaps of an envelope's back, meeting at the centre. They do
+   not move — in the reference they never move either. Each one's gradient
+   runs from its outer edge to the seam, which is what puts ambient
+   occlusion along all four folds without drawing a single line.
+
+   The seams are at a fixed 45 degrees, which in a 3:2 card puts the V's
+   base at 50% +/- 33.333% — so the top and bottom flaps are triangles and
+   the sides are pentagons, exactly as on a real envelope's back. They used
+   to run corner to corner, which meant the V's angle was whatever the
+   viewport's aspect happened to be; on a phone that is a tall diamond and
+   reads as nothing at all. Locking the angle is what makes this an
+   envelope rather than an X. */
+      .env-flap {
+        position: absolute;
+        inset: 0;
+      }
+      .ef-t {
+        clip-path: polygon(16.667% 0, 83.333% 0, 50% 50%);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.09) 0%,
+          rgba(0, 0, 0, 0.3) 50%
+        );
+      }
+      .ef-b {
+        clip-path: polygon(16.667% 100%, 83.333% 100%, 50% 50%);
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(0, 0, 0, 0.26) 50%
+        );
+      }
+      .ef-l {
+        clip-path: polygon(0 0, 16.667% 0, 50% 50%, 16.667% 100%, 0 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.07) 0%,
+          rgba(0, 0, 0, 0.28) 50%
+        );
+      }
+      .ef-r {
+        clip-path: polygon(100% 0, 83.333% 0, 50% 50%, 83.333% 100%, 100% 100%);
+        background: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0.06) 0%,
+          rgba(0, 0, 0, 0.32) 50%
+        );
+      }
+      /* Lit from the upper left, same direction as the Seal's filter and the
+   ornament's distant light. Three surfaces, one light. */
+      .env-lit {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          148deg,
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(255, 255, 255, 0) 40%,
+          rgba(0, 0, 0, 0.12) 100%
+        );
+      }
+      /* The seal sits in the well where four folds meet, so that well is the
+   darkest place on the paper. */
+      .env-ao {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.13) 24%,
+          rgba(0, 0, 0, 0) 48%
+        );
+      }
+      .env-vig {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 84% 74% at 50% 44%,
+          rgba(0, 0, 0, 0) 44%,
+          rgba(0, 0, 0, 0.26) 100%
+        );
+      }
+      /* The crisp fold. The gradients above give the folds their occlusion but
+   not their edge, and a real crease has one.
+
+   The viewBox is 150x100 — the card's own 3:2 — so `preserveAspectRatio`
+   of "none" is a *uniform* scale here and the stroke carries no
+   anisotropy at all. That was not true of the full-bleed version, which
+   stretched a 100x100 box across whatever the viewport was and paid for
+   it in an unevenly weighted line. */
+      .env-seam {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .seal-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        z-index: 5;
+        width: var(--seal-d);
+        height: var(--seal-d);
+        border: 0;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+        transition: scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.4));
+      }
+      .seal-btn:hover {
+        scale: 1.04;
+      }
+      .seal-btn:focus-visible {
+        outline: 2px solid var(--gold-a);
+        outline-offset: 10px;
+        border-radius: 50%;
+      }
+      .seal-btn svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* The flame. This is the one piece of the reference's motion worth
+   cloning outright: from 2.2s a small warm flame kindles at the bottom
+   edge of the wax and grows until the dissolve. Screen-blended so it
+   adds light to the paper rather than sitting on top of it. */
+      .env-flame,
+      .env-fglow {
+        position: absolute;
+        opacity: 0;
+        mix-blend-mode: screen;
+        pointer-events: none;
+      }
+
+      /* THE LIGHT. Measured off the reference's own last frame rather than
+   invented, because this one detail is what makes their opener read as an
+   envelope coming open when in fact nothing opens at all.
+
+   What is actually there, in units of the seal's diameter:
+
+     - a wedge in the V-notch where the bottom flap's two edges meet the
+       wax, 0.43 wide at the top and narrowing to 0.11, 0.135 tall;
+     - TWO lobes, not one, with a near-black core between them — that core
+       is the fold itself, and it is the whole reason the light reads as a
+       gap rather than as a flame sitting on the paper;
+     - rim light running 0.13 down both folds either side, so the paper
+       responds to the light instead of merely being behind it;
+     - falloff complete within half a seal-width. No haze.
+
+   Ours before this was a single blurred dot floating in open paper with no
+   relationship to the folds at all. z-index 4 puts it UNDER the seal
+   (which is 5), so the wedge's top is hidden behind the wax and the light
+   appears to escape from beneath it. Drawn in the card's own 150x100
+   space, which is uniform on a 3:2 card, so 45 degrees here is 45 degrees
+   on screen and the rim light lies exactly along the seams. */
+      /* The blur is stated in seal-widths, not pixels. It used to be a flat
+   2px, which was about a fifth of a card unit when the card was 1152
+   wide and is a tenth of one now that it covers the screen — so the
+   light kept the same shape and lost its softness as the card grew, and
+   the clipped wedge started reading as a gold trapezoid rather than as
+   light. Anything sized off the card holds at every screen size; this
+   was the one thing here that was not. */
+      .env-flame {
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        transform-origin: 50% 50%;
+        scale: 0.3;
+        filter: blur(calc(var(--seal-d) * 0.018));
+      }
+      .env-fglow {
+        left: 50%;
+        translate: -50% 0;
+        top: calc(50% + var(--seal-d) * 0.3);
+        width: calc(var(--seal-d) * 0.85);
+        height: calc(var(--seal-d) * 0.42);
+        z-index: 4;
+        transform-origin: 50% 0;
+        filter: blur(calc(var(--seal-d) * 0.055));
+        background: radial-gradient(
+          ellipse 46% 44% at 50% 14%,
+          rgba(255, 150, 44, 0.38) 0%,
+          rgba(255, 92, 0, 0) 76%
+        );
+      }
+      /* The reference kindles at 2.2s of its 3.375s. Ours cannot: theirs is
+   a video that starts playing on the click, so the guest has motion to
+   watch while it waits. Ours only has the push, which is a constant
+   creep and reads as nothing at all for the first two seconds — click,
+   and the page appears not to have heard you. So the light starts at
+   0.45s and is fully lit by ~1.2s, which puts the whole event inside the
+   window where a guest is still attributing it to their own click.
+
+   Then it keeps going. `kindle` does not stop at 1 — it runs on to 1.13,
+   so for the remaining two seconds the wedge widens, the lobes separate,
+   and the rim light runs further down both folds. That last stretch is
+   what makes it read as an opening rather than as a lamp coming on. The
+   ceiling is geometry, not taste: the notch's top edge is 11.2 units
+   above the card's centre and the wax's lower rim is 12.93, so anything
+   past 1.154 drags the top of the light out from under the wax and
+   leaves a bare strip of paper between the two. 1.13 keeps it tucked.
+
+   Scaling the whole SVG about the card's centre is what holds all of
+   that together — every part of the light sits on a ray from the centre,
+   so the wedge stays in the notch and the rim light stays on the seams
+   however far it grows. */
+      #envelope.open .env-flame {
+        animation:
+          kindle 2.6s ease-out 0.45s forwards,
+          flick 0.32s ease-in-out 0.45s infinite;
+      }
+      #envelope.open .env-fglow {
+        animation: kindle 2.6s ease-out 0.45s forwards;
+      }
+      @keyframes kindle {
+        0% {
+          opacity: 0;
+          scale: 0.28;
+        }
+        29% {
+          opacity: 1;
+          scale: 1;
+        }
+        100% {
+          opacity: 1;
+          scale: 1.13;
+        }
+      }
+      /* `rotate` and `filter`, never `opacity` or `scale` — those belong to
+   `kindle`, and two animations on one property is a fight. */
+      @keyframes flick {
+        0%,
+        100% {
+          rotate: -1.5deg;
+          filter: blur(calc(var(--seal-d) * 0.018));
+        }
+        50% {
+          rotate: 1.5deg;
+          filter: blur(calc(var(--seal-d) * 0.024));
+        }
+      }
+
+      /* Their hint is white at 70% with a bounce and a pulse. The pulse lives
+   on the child so the container's fade-out is not fighting an animation
+   for the same property — the trap already noted on `.scroll-cue`. */
+      .env-hint {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 8vh;
+        z-index: 7;
+        text-align: center;
+        animation: bob 2.6s ease-in-out infinite;
+        transition: opacity 0.4s ease;
+      }
+      .env-hint p {
+        color: rgba(255, 255, 255, 0.74);
+        animation: hintpulse 2.6s ease-in-out infinite;
+      }
+      #envelope.open .env-hint {
+        opacity: 0;
+      }
+      @keyframes hintpulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.55;
+        }
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
+      /* ============================================================
+   ARRIVAL — what the camera lands on
+   ============================================================ */
+      /* The Sunset behind the Envelope starts slightly enlarged and settles as
+   the camera arrives, so flying in has somewhere to land — without it the
+   view through the window is static and the push has no parallax.
+   It is the canvas that scales, not #invite: #hero already clips, so the
+   overflow is contained. Scaling #invite instead put the whole document
+   3.5% over the viewport width, which measured as 50px of horizontal
+   overflow at 1440. */
+      #sky {
+        transform: scale(1.08);
+        transition: transform 1.5s cubic-bezier(0.18, 0.72, 0.24, 1);
+      }
+      html:not(.locked) #sky {
+        transform: none;
+      }
+
+      /* The Hero's type waits for the camera to land. Shown any earlier it is
+   read as fragments through the envelope's mouth, which looks like a bug
+   rather than a reveal. Gated on :not(.no-js) so that if the bootstrap
+   script never runs, the type is simply visible and nothing is lost. */
+      html:not(.no-js):not(.landed) .hero-kicker,
+      html:not(.no-js):not(.landed) .names,
+      html:not(.no-js):not(.landed) .hero-lead,
+      html:not(.no-js):not(.landed) .hero-date {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      html:not(.no-js):not(.landed) .scroll-cue {
+        opacity: 0;
+      }
+      .hero-kicker,
+      .names,
+      .hero-lead,
+      .hero-date {
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+      }
+      /* .scroll-cue is mid-animation (bob), and an animation beats a
+   transition on the same property — so it gets opacity only. */
+      .scroll-cue {
+        transition: opacity 0.7s ease;
+      }
+      html.landed .names {
+        transition-delay: 0.1s;
+      }
+      html.landed .hero-lead {
+        transition-delay: 0.24s;
+      }
+      html.landed .hero-date {
+        transition-delay: 0.36s;
+      }
+      html.landed .scroll-cue {
+        transition-delay: 0.62s;
+      }
+
+      /* ============================================================
+   HERO — canvas sunset over the Mediterranean
+   ============================================================ */
+      #hero {
+        position: relative;
+        min-height: 100svh;
+        display: grid;
+        align-content: start;
+        justify-items: center;
+        gap: 0.7rem;
+        padding: clamp(4.5rem, 12vh, 7rem) 1.5rem 6rem;
+        text-align: center;
+        overflow: hidden;
+        isolation: isolate;
+      }
+      #sky {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        display: block;
+      }
+      /* scrim guarantees the type reads on every palette's sky */
+      .hero-scrim {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          radial-gradient(
+            120% 62% at 50% 44%,
+            rgba(28, 8, 18, 0.42) 0%,
+            rgba(28, 8, 18, 0.2) 45%,
+            rgba(28, 8, 18, 0) 78%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(20, 6, 14, 0.3) 0%,
+            rgba(20, 6, 14, 0) 34%
+          ),
+          /* Haze band over the lead and date. The sky is brightest just above
+             the horizon, which is exactly where they sit, and near-white type
+             on that orange was the one thing in the hero failing AA. Fades
+             out by 78%, so it is gone before the sun at ~75%. */
+          linear-gradient(
+            180deg,
+            rgba(24, 8, 16, 0) 34%,
+            rgba(24, 8, 16, 0.31) 62%,
+            rgba(24, 8, 16, 0) 78%
+          );
+      }
+
+      .hero-kicker {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-size: clamp(0.74rem, 2.5vw, 0.88rem);
+        letter-spacing: 0.36em;
+        text-transform: uppercase;
+        color: #fff0de;
+        text-shadow: 0 1px 12px rgba(40, 10, 20, 0.55);
+      }
+      .hero-lead {
+        font-size: 0.95rem;
+        color: rgba(255, 240, 222, 0.92);
+        max-width: 30ch;
+        text-wrap: balance;
+        letter-spacing: 0.03em;
+        text-shadow: 0 1px 10px rgba(40, 10, 20, 0.5);
+      }
+
+      .names {
+        display: grid;
+        gap: 0;
+        justify-items: center;
+        margin-block: 0.5rem 0;
+      }
+      .names .n {
+        font-family: "Ephesis", cursive;
+        color: #fff6ea;
+        font-size: clamp(3.6rem, 17vw, 7rem);
+        line-height: 0.86;
+        text-shadow:
+          0 2px 30px rgba(40, 10, 20, 0.5),
+          0 1px 3px rgba(40, 10, 20, 0.35);
+      }
+      /* The Monogram is a K and an S sharing one ampersand, so this is the mark the
+   whole identity is built on — not punctuation set between two names. Half the
+   name size, Fraunces at its display optical size, and a warm halo in the
+   Theme's glow so it rhymes with the sun sitting on the horizon below. */
+      .names .amp {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 300;
+        font-variation-settings: "opsz" 144;
+        color: var(--sun);
+        font-size: clamp(2.4rem, 7vw, 3.4rem);
+        line-height: 1.05;
+        margin-block: 0.12em;
+        text-shadow:
+          0 0 34px var(--glow),
+          0 2px 16px rgba(40, 10, 20, 0.45);
+      }
+
+      /* No local scrim behind the date. One was built here, on the reading that
+   the date was the palest thing in the Hero — it was not, that was
+   `tools/shoot.sh` capturing the staggered fade-in mid-transition. The plate
+   was solving a screenshot, it showed as a dark smudge in the sky, and its
+   own padding pushed the date ~18px lower into the brightest band — so
+   removing it took the date from 6.12:1 to 7.05:1 on its worst palette. */
+      .hero-date {
+        display: grid;
+        gap: 0.5rem;
+        justify-items: center;
+        margin-top: 1.25rem;
+      }
+      /* Flanked by two engraved hairlines. Deliberately not the `.horizon`
+   divider, which means "tier change" in the body and would be diluted by
+   a decorative outing here — this is invitation rule-work, no dot. */
+      .hero-date .day {
+        display: flex;
+        align-items: center;
+        gap: 0.9em;
+        color: #fff3e2;
+        text-shadow: 0 1px 10px rgba(40, 10, 20, 0.6);
+      }
+      .hero-date .day::before,
+      .hero-date .day::after {
+        content: "";
+        width: clamp(1.4rem, 6vw, 2.6rem);
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 240, 222, 0) 0%,
+          rgba(255, 240, 222, 0.5) 100%
+        );
+      }
+      .hero-date .day::after {
+        scale: -1 1;
+      }
+      .hero-date .full {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-size: clamp(1.25rem, 4.8vw, 1.7rem);
+        letter-spacing: 0.12em;
+        color: #fff;
+        text-shadow: 0 1px 16px rgba(40, 10, 20, 0.6);
+      }
+      .hero-place {
+        font-size: 0.72rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: rgba(255, 240, 222, 0.78);
+        margin-top: 0.2rem;
+        text-shadow: 0 1px 10px rgba(40, 10, 20, 0.5);
+      }
+
+      .scroll-cue {
+        position: absolute;
+        bottom: 4.6rem;
+        left: 50%;
+        translate: -50% 0;
+        display: grid;
+        justify-items: center;
+        gap: 0.45rem;
+        animation: bob 2.6s ease-in-out infinite;
+        color: rgba(255, 240, 222, 0.8);
+      }
+      .scroll-cue span {
+        font-size: 0.62rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+
+      /* ============================================================
+   SECTIONS
+   ============================================================ */
+      /* A card means "the hard fact you would screenshot" — when, and where.
+   Nothing else is boxed, so the box itself carries the hierarchy. */
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 2px;
+        padding: var(--card-py) var(--card-px);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+      }
+
+      /* The date now occupies the slot "The Evening" used to. Same day/full
+   split as the Hero so the two read as the same fact stated twice, not
+   two different facts. `full` is floored at 25.6px to stay WCAG large
+   text: the heading role is only 4.29:1 on ground in coral, which clears
+   the 3:1 large-text bar but not 4.5:1. */
+      .card-date {
+        display: grid;
+        gap: 0.5rem;
+        justify-items: center;
+      }
+      .card-date .day {
+        color: var(--ink);
+      }
+      .card-date .full {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-size: clamp(1.6rem, 5.4vw, 2.15rem);
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--heading);
+      }
+      .times {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: clamp(1rem, 5vw, 2.2rem);
+        margin-top: 1.9rem;
+      }
+      .time {
+        display: grid;
+        gap: 0.4rem;
+        justify-items: center;
+      }
+      .time .t {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-size: clamp(1.45rem, 5.6vw, 2rem);
+        color: var(--heading);
+        font-variant-numeric: tabular-nums;
+        /* "12:00 AM" wraps in its column at 390px without this */
+        white-space: nowrap;
+      }
+      .time .l {
+        font-size: 0.64rem;
+        color: var(--ink-soft);
+      }
+      .times .sep {
+        width: 1px;
+        height: 42px;
+        background: var(--rule);
+      }
+
+      /* venue */
+      /* Taller than the old sunset crop needed: the Shore has to read as three
+   zones — sky, surf, sand — and 150px squeezed them into a stripe. */
+      #venue-strip {
+        display: block;
+        width: 100%;
+        height: clamp(170px, 32vw, 260px);
+      }
+      /* The strip leads the venue card edge to edge. A bordered picture inside
+   a bordered box reads as two frames, and this is the one place the
+   sunset gets to come back below the fold. */
+      .venue-card {
+        padding: 0 0 var(--card-py);
+        overflow: hidden;
+      }
+      .venue-body {
+        padding-inline: var(--card-px);
+        padding-top: var(--card-py);
+      }
+      .strip-frame {
+        line-height: 0;
+        overflow: hidden;
+      }
+      .venue-name {
+        font-family: "Ephesis", cursive;
+        color: var(--heading);
+        font-size: clamp(3.4rem, 15vw, 5.4rem);
+        line-height: 0.95;
+      }
+      .venue-line {
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--ink);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.85rem 1.9rem;
+        border: 1px solid var(--heading);
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--heading);
+        text-decoration: none;
+        background: transparent;
+        cursor: pointer;
+        transition:
+          background-color 0.35s ease,
+          color 0.35s ease,
+          transform 0.2s ease;
+      }
+      .btn:hover {
+        background: var(--heading);
+        color: var(--ground);
+        transform: translateY(-2px);
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+      }
+      .dress-lines {
+        display: grid;
+        gap: 0.85rem;
+        margin-top: 1.5rem;
+      }
+      .dress-lines .bride-note {
+        color: var(--heading);
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 0.94rem;
+        letter-spacing: 0.02em;
+        padding-top: 0.3rem;
+      }
+
+      #footer {
+        padding-bottom: clamp(6rem, 14vw, 8rem);
+      }
+      .mono-mark {
+        width: clamp(64px, 17vw, 88px);
+        height: auto;
+        display: block;
+        opacity: 0.95;
+      }
+      .footer-names {
+        font-family: "Ephesis", cursive;
+        color: var(--heading);
+        font-size: clamp(3rem, 13vw, 4.4rem);
+        line-height: 0.95;
+      }
+      .footer-date {
+        font-family: "Fraunces", Georgia, serif;
+        letter-spacing: 0.3em;
+        font-size: 0.78rem;
+        color: var(--ink-soft);
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ---------- music ---------- */
+      #music-btn {
+        position: fixed;
+        left: 1.1rem;
+        bottom: 1.1rem;
+        z-index: 40;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid var(--rule);
+        background: var(--panel);
+        color: var(--heading);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        display: none;
+        place-items: center;
+        transition: transform 0.2s ease;
+      }
+      #music-btn.show {
+        display: grid;
+      }
+      #music-btn:hover {
+        transform: scale(1.08);
+      }
+      #music-btn:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+      #music-btn svg {
+        width: 17px;
+        height: 17px;
+        pointer-events: none;
+      }
+      #music-btn .off-slash {
+        display: none;
+      }
+      #music-btn[aria-pressed="false"] .off-slash {
+        display: block;
+      }
+
+      /* ============ PALETTE SWITCHER — DELETE ONCE SOHA PICKS ============ */
+      #theme-switch {
+        position: fixed;
+        right: 1.1rem;
+        bottom: 1.1rem;
+        z-index: 40;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 0.7rem;
+        border-radius: 999px;
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        box-shadow: 0 8px 28px -14px rgba(0, 0, 0, 0.35);
+      }
+      #theme-switch .sw-label {
+        font-size: 0.54rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        padding-inline: 0.3rem 0.1rem;
+        white-space: nowrap;
+      }
+      .sw-dot {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        padding: 0;
+        transition: transform 0.2s ease;
+      }
+      .sw-dot:hover {
+        transform: scale(1.16);
+      }
+      .sw-dot:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+      .sw-dot[aria-checked="true"] {
+        box-shadow:
+          0 0 0 2px var(--ground),
+          0 0 0 3.5px var(--heading);
+      }
+      /* ------------------------------------------------------------------
+   Desktop. Everything above this is the phone, which is where the
+   invitation is actually opened; this block is the only thing that lets
+   it occupy a wide screen rather than sit in one as a 540px ribbon.
+
+   The cards widen and the prose does not. `.wrap` keeps its measure, so
+   the intro and the dress-code lines hold a readable line length, and
+   the two cards become the widest objects on the page — which is the
+   hierarchy the body already claims. A card means "the hard fact you
+   would screenshot", and now it also looks like the biggest thing in
+   its section.
+
+   Nothing here touches the Hero. Its type sits over a live canvas and
+   its contrast is measured at a stated viewport; resizing it would
+   invalidate that measurement for no gain, since the Hero is already
+   full-bleed and carries the page's scale on its own.
+   ------------------------------------------------------------------ */
+      @media (min-width: 900px) {
+        :root {
+          --card-py: 3.3rem;
+          --card-px: 3rem;
+        }
+        .wrap.card {
+          max-width: 39rem;
+        }
+        .sec-title {
+          font-size: 2.6rem;
+        }
+        /* the labels have to grow with the date or they go missing under it */
+        .eyebrow,
+        .card-date .day {
+          font-size: 0.8rem;
+        }
+        .time .l {
+          font-size: 0.7rem;
+        }
+        .card-date .full {
+          font-size: 2.5rem;
+        }
+        .time .t {
+          font-size: 2.25rem;
+        }
+        .times .sep {
+          height: 54px;
+        }
+        /* the strip keeps its proportion as the card widens */
+        #venue-strip {
+          height: 300px;
+        }
+        .venue-name {
+          font-size: 6rem;
+        }
+      }
+      @media (max-width: 380px) {
+        #theme-switch .sw-label {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      (function () {
+        var r = document.documentElement;
+        r.classList.remove("no-js");
+        r.classList.add("locked");
+        var s;
+        try {
+          s = localStorage.getItem("kts-palette");
+        } catch (e) {}
+        r.dataset.palette =
+          ["shell", "coral", "sorbet", "sunset", "goodvibes"].indexOf(s) > -1
+            ? s
+            : "shell";
+      })();
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <!-- Karim & Soha monogram, supplied as artwork. Used as a luminance mask so it
+         takes the palette colour instead of being locked to black. -->
+        <mask
+          id="mono"
+          maskUnits="objectBoundingBox"
+          maskContentUnits="objectBoundingBox"
+        >
+          <image
+            href="data:image/png;base64,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"
+            x="0"
+            y="0"
+            width="1"
+            height="1"
+            preserveAspectRatio="none"
+          />
+        </mask>
+      </defs>
+    </svg>
+
+    <div id="envelope">
+      <!-- The card is larger than the viewport and cropped by the overlay's
+           `overflow: hidden`, which is what "zoomed in" means here. It is
+           still a 3:2 card with its own shadow and its own dark ground
+           underneath — they are simply off-screen on most windows. -->
+      <div class="env-cam">
+        <div class="env-paper" aria-hidden="true"></div>
+
+        <!-- The embossed relief: a woven tile lit as a height-field. Blur the
+             pattern's alpha to get a bump map, run a distant light over it,
+             and the output is grey relief that gets blended `overlay` onto the
+             paper — so it costs no new colour and follows the Theme for free,
+             which is the ADR 0001 constraint carried over intact. -->
+        <svg
+          class="env-orn"
+          viewBox="0 0 150 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="emboss" x="-3%" y="-3%" width="106%" height="106%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="0.38" result="b" />
+              <!-- #a3a3a3 rather than #808080: a flat surface returns
+                   lighting-color x sin(elevation), and at 52 degrees that is
+                   0.79 — so this is the value that lands the flat parts on
+                   mid-grey, where `overlay` does nothing. -->
+              <feDiffuseLighting
+                in="b"
+                surfaceScale="4"
+                diffuseConstant="1"
+                lighting-color="#a3a3a3"
+              >
+                <feDistantLight azimuth="228" elevation="52" />
+              </feDiffuseLighting>
+            </filter>
+
+            <!-- Damask, generated rather than drawn. Two earlier attempts at
+                 scrollwork failed because both were built as a mirrored
+                 quarter: a mirrored quarter only resolves into ornament if
+                 every path either lands on a mirror axis with its tangent
+                 perpendicular to it or stays clear of both, and smooth arcs
+                 meeting an axis perpendicular make circles — which is how the
+                 second one turned into a field of targets.
+
+                 So there is no mirroring here at all. This is an ogee lattice
+                 with a palmette in each compartment, tiled LINEARLY on a
+                 75x62.5 cell. The cusps damask needs come from the geometry
+                 itself: the ogee's four nodes are cusps by construction, every
+                 petal is two arcs meeting at a point, and each volute is a
+                 log-spiral tapering to a terminal.
+
+                 Relief runs at three heights — the lattice lowest, the drop
+                 and buds between, the palmette and volutes full — because a
+                 single-height emboss reads as a stamp where the reference's
+                 reads as carving. -->
+            <pattern
+              id="damask"
+              width="37.5"
+              height="31.25"
+              patternUnits="userSpaceOnUse"
+            >
+              <!-- lowest relief: the ogee lattice, doubled -->
+              <path d="M0 15.62 C0 10.62 14.62 13.12 18.75 0 C22.88 13.12 37.5 10.62 37.5 15.62 C37.5 20.62 22.88 18.12 18.75 31.25 C14.62 18.12 0 20.62 0 15.62" fill="none" stroke="#fff" stroke-width="1.7" opacity=".58" />
+              <path d="M2.62 15.62 C2.62 11.33 15.2 13.47 18.75 2.19 C22.3 13.47 34.88 11.33 34.88 15.62 C34.88 19.93 22.3 17.77 18.75 29.06 C15.2 17.77 2.62 19.93 2.62 15.62" fill="none" stroke="#fff" stroke-width="0.7" opacity=".38" />
+              <!-- mid relief: buds at the lattice nodes -->
+              <path d="M0 0 C1.15 -0.78, 0.6 -2.54, 0 -3.1 C-0.6 -2.54, -1.15 -0.78, 0 0 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M0 0 C-1.15 0.78, -0.6 2.54, 0 3.1 C0.6 2.54, 1.15 0.78, 0 0 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 0 C38.65 -0.78, 38.1 -2.54, 37.5 -3.1 C36.9 -2.54, 36.35 -0.78, 37.5 0 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 0 C36.35 0.78, 36.9 2.54, 37.5 3.1 C38.1 2.54, 38.65 0.78, 37.5 0 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M0 31.25 C1.15 30.47, 0.6 28.71, 0 28.15 C-0.6 28.71, -1.15 30.47, 0 31.25 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M0 31.25 C-1.15 32.03, -0.6 33.79, 0 34.35 C0.6 33.79, 1.15 32.03, 0 31.25 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 31.25 C38.65 30.47, 38.1 28.71, 37.5 28.15 C36.9 28.71, 36.35 30.47, 37.5 31.25 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 31.25 C36.35 32.03, 36.9 33.79, 37.5 34.35 C38.1 33.79, 38.65 32.03, 37.5 31.25 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M0 15.62 C0.61 16.57, 1.97 16.12, 2.4 15.62 C1.97 15.13, 0.61 14.68, 0 15.62 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M0 15.62 C-0.61 14.68, -1.97 15.13, -2.4 15.62 C-1.97 16.12, -0.61 16.57, 0 15.62 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 15.62 C38.11 16.57, 39.47 16.12, 39.9 15.62 C39.47 15.13, 38.11 14.68, 37.5 15.62 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <path d="M37.5 15.62 C36.89 14.68, 35.53 15.13, 35.1 15.62 C35.53 16.12, 36.89 16.57, 37.5 15.62 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".68" />
+              <!-- full relief: two opposed volutes, a bud, and a skirt -->
+              <path d="M15.44 16.89 L15.38 16.84 L15.31 16.79 L15.22 16.75 L15.12 16.73 L15.02 16.73 L14.9 16.76 L14.79 16.8 L14.68 16.88 L14.58 16.98 L14.49 17.1 L14.43 17.25 L14.39 17.42 L14.39 17.61 L14.42 17.8 L14.5 18 L14.62 18.2 L14.79 18.38 L15.01 18.53 L15.26 18.65 L15.56 18.72 L15.88 18.73 L16.22 18.68 L16.57 18.56 L16.91 18.35 L17.23 18.07 L17.51 17.7" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M22.06 16.89 L22.12 16.84 L22.19 16.79 L22.28 16.75 L22.38 16.73 L22.48 16.73 L22.6 16.76 L22.71 16.8 L22.82 16.88 L22.92 16.98 L23.01 17.1 L23.07 17.25 L23.11 17.42 L23.11 17.61 L23.08 17.8 L23 18 L22.88 18.2 L22.71 18.38 L22.49 18.53 L22.24 18.65 L21.94 18.72 L21.62 18.73 L21.28 18.68 L20.93 18.56 L20.59 18.35 L20.27 18.07 L19.99 17.7" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M17.35 17.73 C15.95 17.18, 14.4 18.73, 14.13 19.59 C15.01 19.79, 17.12 19.22, 17.35 17.73 Z" fill="none" stroke="#fff" stroke-width="1.15" opacity=".8" />
+              <path d="M20.15 17.73 C20.38 19.22, 22.49 19.79, 23.37 19.59 C23.1 18.73, 21.55 17.18, 20.15 17.73 Z" fill="none" stroke="#fff" stroke-width="1.15" opacity=".8" />
+              <path d="M18.75 16.02 C20.3 14.71, 19.56 11.75, 18.75 10.82 C17.94 11.75, 17.2 14.71, 18.75 16.02 Z" fill="none" stroke="#fff" stroke-width="1.35" />
+              <path d="M18.75 11.78 C19.56 11.22, 19.17 9.95, 18.75 9.55 C18.33 9.95, 17.94 11.22, 18.75 11.78 Z" fill="none" stroke="#fff" stroke-width="1" opacity=".85" />
+            </pattern>    <!-- Their frames carve the top and bottom flaps and leave the
+                 sides as plain paper, which is what keeps the envelope's
+                 shape readable instead of dissolving into wallpaper. Both
+                 triangles live in one clipPath so the whole ornament stays a
+                 single filter pass. objectBoundingBox units, so it tracks the
+                 card at any size. A filter runs BEFORE a clip on the same
+                 element, so the relief is generated first and then cut at the
+                 fold, which is what the reference does too. -->
+            <clipPath id="flapTB" clipPathUnits="objectBoundingBox">
+              <polygon points="0.16667,0 0.83333,0 0.5,0.5" />
+              <polygon points="0.16667,1 0.83333,1 0.5,0.5" />
+            </clipPath>
+          </defs>
+          <rect
+            width="150"
+            height="100"
+            fill="url(#damask)"
+            filter="url(#emboss)"
+            clip-path="url(#flapTB)"
+          />
+        </svg>
+
+        <div class="env-flap ef-t" aria-hidden="true"></div>
+        <div class="env-flap ef-b" aria-hidden="true"></div>
+        <div class="env-flap ef-l" aria-hidden="true"></div>
+        <div class="env-flap ef-r" aria-hidden="true"></div>
+        <svg
+          class="env-seam"
+          viewBox="0 0 150 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <g fill="none" stroke-linecap="square">
+            <path
+              d="M25 0 L75 50 L125 0 M25 100 L75 50 L125 100"
+              stroke="rgba(0,0,0,.36)"
+              stroke-width="0.55"
+            />
+            <path
+              d="M25 0.7 L75 50.7 L125 0.7 M25 99.3 L75 49.3 L125 99.3"
+              stroke="rgba(255,255,255,.12)"
+              stroke-width="0.34"
+            />
+          </g>
+        </svg>
+        <div class="env-lit" aria-hidden="true"></div>
+        <div class="env-ao" aria-hidden="true"></div>
+        <div class="env-vig" aria-hidden="true"></div>
+
+        <button
+          class="seal-btn"
+          id="seal"
+          aria-label="Break the seal to open the invitation"
+        >
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <filter id="waxEdge" x="-25%" y="-25%" width="150%" height="150%">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.038"
+                  numOctaves="3"
+                  seed="9"
+                  result="n"
+                />
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="n"
+                  scale="7"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                />
+              </filter>
+              <!-- Matte, not glossy. A tight bright specular is what made the
+                   old seal read as a gel button: low constant and a low
+                   exponent give wax's broad, soft sheen instead. -->
+              <filter id="waxLight" x="-35%" y="-35%" width="170%" height="170%">
+                <!-- 1.5, not 3. The blur is the wax's shoulder: at 3 the whole
+                     disc is one soft hump and the seal reads as a gel button.
+                     At 1.5 the edge turns over in a short distance, which is
+                     what a poured-and-pressed blob actually does. -->
+                <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="b" />
+                <feSpecularLighting
+                  in="b"
+                  surfaceScale="4"
+                  specularConstant="0.26"
+                  specularExponent="46"
+                  lighting-color="#fff4e2"
+                  result="s"
+                >
+                  <fePointLight x="34" y="26" z="74" />
+                </feSpecularLighting>
+                <feComposite in="s" in2="SourceAlpha" operator="in" result="sc" />
+                <feComposite
+                  in="SourceGraphic"
+                  in2="sc"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                />
+              </filter>
+              <!-- Raises the monogram. The mask has to sit on an inner group:
+                   per the SVG rendering order a filter runs BEFORE mask, so a
+                   filter and a mask on the same element would light the whole
+                   rect instead of the letters. -->
+              <filter id="goldRaise" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="0.9" result="b" />
+                <feSpecularLighting
+                  in="b"
+                  surfaceScale="2.8"
+                  specularConstant="0.95"
+                  specularExponent="15"
+                  lighting-color="#fffbe8"
+                  result="s"
+                >
+                  <feDistantLight azimuth="228" elevation="54" />
+                </feSpecularLighting>
+                <feComposite in="s" in2="SourceAlpha" operator="in" result="sc" />
+                <feComposite
+                  in="SourceGraphic"
+                  in2="sc"
+                  operator="arithmetic"
+                  k1="0"
+                  k2="1"
+                  k3="1"
+                  k4="0"
+                />
+              </filter>
+              <radialGradient id="waxFill" cx="36%" cy="26%" r="80%">
+                <stop offset="0%" stop-color="var(--seal-a)" />
+                <stop offset="62%" stop-color="var(--seal-b)" />
+                <stop offset="100%" stop-color="var(--seal-b)" />
+              </radialGradient>
+              <!-- the knock-back, and the sunken field -->
+              <radialGradient id="waxDark" cx="36%" cy="26%" r="82%">
+                <stop offset="0%" stop-color="rgba(28,0,10,.3)" />
+                <stop offset="58%" stop-color="rgba(28,0,10,.46)" />
+                <stop offset="100%" stop-color="rgba(20,0,8,.72)" />
+              </radialGradient>
+              <!-- Offset to the lower right: the light is upper left, so the
+                   well's own upper-left wall is what shades it and the floor is
+                   brightest away from that wall. A concentric well reads as a
+                   button; an offset one reads as a hollow. -->
+              <!-- across the torus, not around it: upper-left lit, lower-right
+                   turned away. White and black alpha only, so the wax still
+                   takes the Theme's `seal` role underneath. -->
+              <linearGradient id="waxRim" x1="0.18" y1="0.05" x2="0.82" y2="0.95">
+                <stop offset="0%" stop-color="rgba(255,255,255,.3)" />
+                <stop offset="34%" stop-color="rgba(255,255,255,.07)" />
+                <stop offset="62%" stop-color="rgba(0,0,0,.1)" />
+                <stop offset="100%" stop-color="rgba(0,0,0,.34)" />
+              </linearGradient>
+              <radialGradient id="waxWell" cx="64%" cy="72%" r="86%">
+                <stop offset="0%" stop-color="rgba(0,0,0,.07)" />
+                <stop offset="52%" stop-color="rgba(0,0,0,.22)" />
+                <stop offset="100%" stop-color="rgba(0,0,0,.42)" />
+              </radialGradient>
+
+              <!-- Metal is a hard ramp, not a tint: highlight, body, shadow,
+                   and a glint back up at the bottom edge where the raised
+                   surface turns over. That last stop is most of what makes
+                   this read as gold rather than as cream. -->
+              <linearGradient id="goldFill" x1="0.12" y1="0" x2="0.5" y2="1">
+                <stop offset="0%" stop-color="#fff6d8" />
+                <stop offset="22%" stop-color="var(--gold-a)" />
+                <stop offset="62%" stop-color="var(--gold-b)" />
+                <stop offset="88%" stop-color="var(--gold-b)" />
+                <stop offset="100%" stop-color="var(--gold-a)" />
+              </linearGradient>
+            </defs>
+            <!-- The splat. Deliberately darker than the paper it sits on:
+                 the old seal was brighter and pinker than its own envelope,
+                 which is most of why it read as a plastic button stuck on
+                 rather than as wax poured into the fold. Hue is untouched —
+                 the knock-back is black alpha, so it still follows the Theme. -->
+            <g filter="url(#waxLight)">
+              <circle
+                cx="60"
+                cy="60"
+                r="46"
+                fill="url(#waxFill)"
+                filter="url(#waxEdge)"
+              />
+              <!-- Same radius, same filter, same turbulence seed, so the
+                   displacement is identical and this lands exactly on the
+                   splat. An earlier attempt clipped it instead and lost the
+                   irregular lip: `clipPath` takes geometry only and ignores
+                   the filter on the shape inside it. -->
+              <circle
+                cx="60"
+                cy="60"
+                r="46"
+                fill="url(#waxDark)"
+                filter="url(#waxEdge)"
+              />
+            </g>
+            <!-- A raised torus around a sunken field, which is what a real
+                 stamp leaves: the well is darker than the rim, the rim's inner
+                 wall throws a shadow inward, and the catchlight sits just
+                 below centre where the lip turns over.
+
+                 The torus is stroked explicitly rather than left to the
+                 specular pass. A near-flat disc lit by a point light returns a
+                 wash, not an edge — the same reason `feDistantLight` was wrong
+                 here — so the rim's form has to be stated as a gradient across
+                 its width, dark where it turns away at the lower right and hot
+                 where it faces the light at the upper left. Without this the
+                 seal is a soft blob whatever the filter does. -->
+            <circle
+              cx="60"
+              cy="60"
+              r="39"
+              fill="none"
+              stroke="url(#waxRim)"
+              stroke-width="13"
+            />
+            <circle
+              cx="60"
+              cy="60"
+              r="45.5"
+              fill="none"
+              stroke="rgba(0,0,0,.42)"
+              stroke-width="1.6"
+            />
+            <circle cx="60" cy="60" r="32" fill="url(#waxWell)" />
+            <circle
+              cx="60"
+              cy="60"
+              r="32"
+              fill="none"
+              stroke="rgba(0,0,0,.34)"
+              stroke-width="4"
+            />
+            <path
+              d="M28.5 55 A32 32 0 0 1 78 34"
+              fill="none"
+              stroke="rgba(255,255,255,.13)"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            />
+            <!-- monogram, raised in gold -->
+            <g filter="url(#goldRaise)">
+              <g mask="url(#mono)">
+                <rect x="39" y="39" width="42" height="42" fill="url(#goldFill)" />
+              </g>
+            </g>
+          </svg>
+        </button>
+
+        <div class="env-fglow" aria-hidden="true"></div>
+        <!-- The seal's diameter is 0.225 of the card and the card is 150 units
+             wide, so the wax is 33.75 units across and its lower rim sits at
+             y = 66.9. Every number below is that geometry: the notch starts
+             above the rim so its top is hidden behind the wax, and the rim
+             light begins at radius 13, just outside it.
+
+             Note the wax is NOT half the button box: the splat is r=46 in a
+             120-unit viewBox, so its radius is 0.383 of the seal diameter and
+             its lower rim is at y = 62.9, not 66.9. Pinning the light to the
+             box instead of to the wax leaves a band of bare paper between the
+             two and the light stops reading as coming from underneath. -->
+        <svg
+          class="env-flame"
+          viewBox="0 0 150 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <clipPath id="notch">
+              <polygon points="67.75,61.2 82.25,61.2 76.95,66.3 73.05,66.3" />
+            </clipPath>
+            <!-- The reference's lobes peak at 0.89 luminance against a 0.11
+                 core. That is a near-white centre, not a gold one — an earlier
+                 pass stopped at #ffd070 and the light read as a brass ornament
+                 rather than as fire. -->
+            <radialGradient id="lobe">
+              <stop offset="0%" stop-color="#fffdf7" stop-opacity="1" />
+              <stop offset="30%" stop-color="#ffe08a" stop-opacity=".99" />
+              <stop offset="50%" stop-color="#ff9a1e" stop-opacity=".85" />
+              <stop offset="78%" stop-color="#ff7d05" stop-opacity=".34" />
+              <stop offset="100%" stop-color="#ff5a00" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="rimFade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffe6ae" stop-opacity=".95" />
+              <stop offset="40%" stop-color="#ff9c26" stop-opacity=".52" />
+              <stop offset="100%" stop-color="#ff6a00" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <!-- two lobes, clipped by the notch. The gap between them is the
+               fold, and leaving it unlit is what reads as an opening. -->
+          <g clip-path="url(#notch)">
+            <ellipse cx="71.7" cy="63" rx="4.8" ry="3.4" fill="url(#lobe)" />
+            <ellipse cx="78.3" cy="63" rx="4.8" ry="3.4" fill="url(#lobe)" />
+          </g>
+          <!-- rim light along the two lower seams -->
+          <g transform="rotate(45 75 50)">
+            <rect x="88" y="49.45" width="7.5" height="1.1" fill="url(#rimFade)" />
+          </g>
+          <g transform="rotate(135 75 50)">
+            <rect x="88" y="49.45" width="7.5" height="1.1" fill="url(#rimFade)" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="env-hint">
+        <p class="eyebrow">Click the seal to open</p>
+      </div>
+    </div>
+
+    <main id="invite" aria-hidden="true">
+      <section id="hero">
+        <canvas id="sky" aria-hidden="true"></canvas>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <p class="hero-kicker">We&rsquo;re engaged</p>
+        <div class="names">
+          <span class="n script">Karim</span>
+          <span class="amp">&amp;</span>
+          <span class="n script">Soha</span>
+        </div>
+        <p class="hero-lead">
+          and we&rsquo;d love you with us on the beach to celebrate
+        </p>
+
+        <div class="hero-date">
+          <span class="day">Friday</span>
+          <span class="full">11 September 2026</span>
+        </div>
+
+        <div class="scroll-cue">
+          <span>Scroll</span>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="tier-lead">
+        <div class="wrap stack">
+          <div class="horizon" aria-hidden="true"><i></i><b></b><i></i></div>
+          <h2 class="sec-title">You&rsquo;re invited</h2>
+          <p>
+            We&rsquo;re throwing a party on the beach to celebrate our engagement, and
+            it wouldn&rsquo;t be the same without you. Everything you need for the
+            evening is below.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap card">
+          <!-- The date, not a mood word. A guest who screenshots only this card
+               has to come away knowing the day. No `When` eyebrow above it:
+               FRIDAY is the eyebrow, and two tracked micro-caps lines stacked
+               on each other read as a duplicated label. -->
+          <div class="card-date">
+            <span class="day">Friday</span>
+            <span class="full">11 September 2026</span>
+          </div>
+          <div class="times">
+            <div class="time">
+              <span class="t">6:00 PM</span><span class="l">Starts</span>
+            </div>
+            <div class="sep"></div>
+            <div class="time">
+              <span class="t">12:00 AM</span><span class="l">Ends</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap card venue-card">
+          <div class="strip-frame">
+            <canvas id="venue-strip" aria-hidden="true"></canvas>
+          </div>
+          <div class="venue-body stack">
+            <p class="eyebrow">Where</p>
+            <h2 class="venue-name" style="margin-top: 0.2rem">Amoun</h2>
+            <p class="venue-line">Sahel &middot; North Coast</p>
+            <a
+              class="btn"
+              style="margin-top: 0.8rem"
+              href="https://maps.app.goo.gl/y2wc2xYJrgC65bH3A"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Maps
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7M9 7h8v8" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <p class="eyebrow">What to wear</p>
+          <h2 class="sec-title" style="margin-top: 0.55rem">Coastal Chic</h2>
+          <div class="dress-lines">
+            <p>Linen and light fabrics &mdash; no jackets needed.</p>
+            <p>Flat shoes or wedges; we&rsquo;re on sand.</p>
+            <p class="bride-note">
+              Please avoid wearing white &mdash; it&rsquo;s Soha&rsquo;s night.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The body ends here. One divider carries the eye into the footer;
+           without it the footer arrives abruptly now that the notes tier
+           (Gifts, Little Ones) is gone. -->
+      <div class="horizon tier-close" aria-hidden="true">
+        <i></i><b></b><i></i>
+      </div>
+
+      <section id="footer">
+        <div class="wrap stack">
+          <svg
+            class="mono-mark"
+            viewBox="0 0 100 100"
+            role="img"
+            aria-label="Karim and Soha monogram"
+          >
+            <rect
+              width="100"
+              height="100"
+              fill="var(--heading)"
+              mask="url(#mono)"
+            />
+          </svg>
+          <p class="eyebrow">See you on the beach</p>
+          <p class="footer-names">Karim &amp; Soha</p>
+          <p class="footer-date">11 &middot; 09 &middot; 2026</p>
+        </div>
+      </section>
+    </main>
+
+    <audio id="audio" loop preload="none" src="music.mp3"></audio>
+    <button
+      id="music-btn"
+      aria-pressed="false"
+      aria-label="Toggle music"
+      title="Music"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+      >
+        <path d="M9 18V6l10-2v12" />
+        <circle cx="6.5" cy="18" r="2.5" />
+        <circle cx="16.5" cy="16" r="2.5" />
+        <path class="off-slash" d="M3 3l18 18" stroke-width="1.6" />
+      </svg>
+    </button>
+
+    <!-- ============ PALETTE SWITCHER — DELETE ONCE SOHA PICKS ============ -->
+    <div id="theme-switch" role="radiogroup" aria-label="Colour palette">
+      <span class="sw-label">Palette</span>
+    </div>
+
+    <script>
+      var root = document.documentElement;
+      function cssv(n) {
+        return getComputedStyle(root).getPropertyValue(n).trim();
+      }
+      function hexA(h, a) {
+        h = h.replace("#", "");
+        return (
+          "rgba(" +
+          parseInt(h.slice(0, 2), 16) +
+          "," +
+          parseInt(h.slice(2, 4), 16) +
+          "," +
+          parseInt(h.slice(4, 6), 16) +
+          "," +
+          a +
+          ")"
+        );
+      }
+      function mix(a, b, t) {
+        a = a.replace("#", "");
+        b = b.replace("#", "");
+        var o = "#";
+        for (var i = 0; i < 3; i++) {
+          var av = parseInt(a.substr(i * 2, 2), 16),
+            bv = parseInt(b.substr(i * 2, 2), 16);
+          o += ("0" + Math.round(av + (bv - av) * t).toString(16)).slice(-2);
+        }
+        return o;
+      }
+      function rnd(n) {
+        var x = Math.sin(n * 127.1) * 43758.5453;
+        return x - Math.floor(x);
+      }
+
+      /* ============================================================
+   SCENES — two canvases, one set of Roles. Sunset is the Hero's sky;
+   Shore is the water's edge in the venue card. They are different
+   pictures, not one picture cropped twice: the Shore's sun has already
+   set. Both read the Theme's scene Roles, so both recolour with the
+   palette.
+   ============================================================ */
+      function ctx2d(cv) {
+        var w = cv.clientWidth,
+          h = cv.clientHeight;
+        if (!w || !h) return null;
+        var dpr = Math.min(window.devicePixelRatio || 1, 2);
+        cv.width = Math.round(w * dpr);
+        cv.height = Math.round(h * dpr);
+        var g = cv.getContext("2d");
+        g.setTransform(dpr, 0, 0, dpr, 0, 0);
+        return { g: g, w: w, h: h };
+      }
+      function roles() {
+        return {
+          top: cssv("--sky-top"),
+          mid: cssv("--sky-mid"),
+          hor: cssv("--sky-horizon"),
+          sun: cssv("--sun"),
+          sea: cssv("--sea"),
+          deep: cssv("--sea-deep"),
+        };
+      }
+      function puff(g, cx, cy, rx, ry, col, a) {
+        g.save();
+        g.translate(cx, cy);
+        g.scale(1, ry / rx);
+        var gr = g.createRadialGradient(0, 0, 0, 0, 0, rx);
+        gr.addColorStop(0, hexA(col, a));
+        gr.addColorStop(0.55, hexA(col, a * 0.5));
+        gr.addColorStop(1, hexA(col, 0));
+        g.fillStyle = gr;
+        g.beginPath();
+        g.arc(0, 0, rx, 0, Math.PI * 2);
+        g.fill();
+        g.restore();
+      }
+
+      /* Clouds. An empty gradient is why the old sky read as wallpaper rather
+   than weather, and cloud is the cheapest depth available.
+   Baked into offscreen layers and drifted with drawImage instead of being
+   rebuilt from ~40 radial gradients every frame. Each layer is drawn three
+   copies wide so it tiles with period w and the wrap seam cannot show, and
+   it is built at half resolution because upscaling gives exactly the
+   softness clouds want, at a quarter of the memory.
+   Two layers rather than one, so the bands parallax — depth is the entire
+   reason to add cloud, and a single layer has none. */
+      var CLOUD_SS = 0.5;
+      var CLOUDS = [
+        /* Far: thin, high, slow — and warm, not dark. High cirrus at sunset
+     catches the last light and is the brightest thing in the sky; drawn
+     darker than the sky it simply disappears, which is what happened on
+     the first attempt. */
+        { y: 0.17, h: 0.05, n: 9, a: 0.2, lit: 0, warm: 1, px: 8, seed: 3 },
+        /* Near: chunkier, lower, in shadow with undersides catching the sun. */
+        { y: 0.41, h: 0.085, n: 7, a: 0.24, lit: 0.8, warm: 0, px: 21, seed: 61 },
+      ];
+      var cloudLayers = null,
+        cloudKey = "";
+      function cloudBand(w, H, C, b) {
+        var c = document.createElement("canvas");
+        c.width = Math.max(2, Math.round(w * 2 * CLOUD_SS));
+        c.height = Math.max(2, Math.round(H * CLOUD_SS));
+        var g = c.getContext("2d");
+        g.scale(CLOUD_SS, CLOUD_SS);
+        var body = b.warm
+          ? mix(C.hor, C.sun, 0.45)
+          : mix(C.mid, C.top, 0.5);
+        for (var k = 0; k < b.n; k++) {
+          var bx = ((k + rnd(b.seed + k * 3.7) * 0.8) / b.n) * w;
+          var cy = H * (b.y + (rnd(b.seed + k * 11.3) - 0.5) * b.h * 0.8);
+          var rx = w * (0.05 + rnd(b.seed + k * 5.1) * 0.08);
+          var ry = H * b.h * (0.4 + rnd(b.seed + k * 17.9) * 0.7);
+          /* Each cloud is a cluster of lobes, not one ellipse. One ellipse per
+       cloud, 150px wide and 30px tall, is why the sky read as horizontal
+       smear rather than weather: cloud has a lumpy silhouette, and the
+       lumps are what catch the light unevenly. Baked once, so the extra
+       gradients cost nothing per frame. */
+          var lobes = 3 + Math.floor(rnd(b.seed + k * 23.3) * 3);
+          for (var d = -1; d <= 1; d++) {
+            for (var q = 0; q < lobes; q++) {
+              var u = (q + 0.5) / lobes,
+                v1 = rnd(b.seed + k * 7.7 + q * 31.1),
+                v2 = rnd(b.seed + k * 3.1 + q * 13.7),
+                v3 = rnd(b.seed + k * 19.3 + q * 5.9);
+              var lx = bx + d * w + (u - 0.5) * rx * 1.7,
+                ly = cy + (v3 - 0.5) * ry * 0.85,
+                lrx = rx * (0.32 + v1 * 0.42),
+                lry = ry * (0.42 + v2 * 0.62);
+              puff(g, lx, ly, lrx, lry, body, b.a * (0.55 + v1 * 0.6));
+              if (b.lit)
+                puff(
+                  g,
+                  lx,
+                  ly + lry * 0.55,
+                  lrx * 0.7,
+                  lry * 0.5,
+                  C.sun,
+                  b.a * b.lit * (0.55 + v2 * 0.6),
+                );
+            }
+          }
+        }
+        return c;
+      }
+      /* Sand mottling. Hard-edged rects drawn per frame read as scratches, and
+   the texture never changes anyway — so it is baked once, like the cloud
+   bands, out of very flat soft-edged smears that stretch with distance so
+   the sand carries the perspective too. Baked at CSS pixels and upscaled
+   on retina, which is exactly the softness damp sand wants. */
+      var sandLayer = null,
+        sandKey = "";
+      function sandTexture(w, h, top, C) {
+        var key =
+          Math.round(w) +
+          "x" +
+          Math.round(h) +
+          "@" +
+          Math.round(top) +
+          "|" +
+          C.deep +
+          C.sun;
+        if (sandLayer && sandKey === key) return sandLayer;
+        var c = document.createElement("canvas");
+        c.width = Math.max(2, Math.round(w));
+        c.height = Math.max(2, Math.round(h));
+        var q = c.getContext("2d"),
+          i,
+          y,
+          sf,
+          rx;
+        for (i = 0; i < 34; i++) {
+          y = top + rnd(i * 5.7) * (h - top);
+          sf = (y - top) / (h - top || 1);
+          rx = w * (0.05 + rnd(i * 21.7) * 0.15) * (0.5 + sf);
+          puff(
+            q,
+            rnd(i * 13.9) * w,
+            y,
+            rx,
+            rx * (0.03 + sf * 0.045),
+            rnd(i * 3.3) > 0.5 ? "#ffffff" : C.deep,
+            (0.05 + rnd(i * 9.1) * 0.055) * (0.2 + sf),
+          );
+        }
+        sandKey = key;
+        sandLayer = c;
+        return c;
+      }
+
+      /* One soft blob, cached, stretched into every speck of sun glitter.
+   `fillRect` gave every speck four hard corners, which is what made the
+   reflection column read as a barcode — light on water has no edges. */
+      var glintSprite = null,
+        glintKey = "";
+      function glint(col) {
+        if (glintSprite && glintKey === col) return glintSprite;
+        var c = document.createElement("canvas");
+        c.width = c.height = 32;
+        var q = c.getContext("2d");
+        var gr = q.createRadialGradient(16, 16, 0, 16, 16, 16);
+        gr.addColorStop(0, hexA(col, 1));
+        gr.addColorStop(0.32, hexA(col, 0.62));
+        gr.addColorStop(1, hexA(col, 0));
+        q.fillStyle = gr;
+        q.fillRect(0, 0, 32, 32);
+        glintKey = col;
+        glintSprite = c;
+        return c;
+      }
+
+      function clouds(g, w, H, C, t) {
+        var key =
+          Math.round(w) + "x" + Math.round(H) + "|" + C.top + C.mid + C.sun;
+        if (!cloudLayers || cloudKey !== key) {
+          cloudLayers = [];
+          for (var i = 0; i < CLOUDS.length; i++)
+            cloudLayers.push(cloudBand(w, H, C, CLOUDS[i]));
+          cloudKey = key;
+        }
+        for (var j = 0; j < cloudLayers.length; j++) {
+          var off = (t * CLOUDS[j].px) % w;
+          if (off < 0) off += w;
+          g.drawImage(cloudLayers[j], -off, 0, w * 2, H);
+        }
+      }
+
+      function paintSunset(cv, o) {
+        var q = ctx2d(cv);
+        if (!q) return;
+        var g = q.g,
+          w = q.w,
+          h = q.h,
+          C = roles(),
+          t = o.t;
+        var H = h * o.horizon;
+
+        var sky = g.createLinearGradient(0, 0, 0, H);
+        sky.addColorStop(0, C.top);
+        sky.addColorStop(0.5, C.mid);
+        sky.addColorStop(1, C.hor);
+        g.fillStyle = sky;
+        g.fillRect(0, 0, w, H + 1);
+
+        var sx = w * 0.5,
+          /* A fraction of the Hero's height, capped by its width. Keyed off
+       min(w, h) it was the width that won on a phone, which put a 28px
+       sun in an 844px sky — the subject of the picture, nearly invisible
+       on the device most guests will open this on. */
+          R = Math.max(26, Math.min(w * 0.105, h * o.sunR)),
+          sy = H - R * o.sunLift;
+
+        g.save();
+        g.beginPath();
+        g.rect(0, 0, w, H);
+        g.clip();
+
+        /* bloom first, so the cloud drawn over it reads as lit by it */
+        var gl = g.createRadialGradient(sx, sy, R * 0.3, sx, sy, R * 6.5);
+        gl.addColorStop(0, hexA(C.sun, 0.5));
+        gl.addColorStop(0.28, hexA(C.sun, 0.15));
+        gl.addColorStop(1, hexA(C.sun, 0));
+        g.fillStyle = gl;
+        g.fillRect(0, 0, w, H);
+
+        clouds(g, w, H, C, t);
+
+        var d = g.createRadialGradient(sx, sy - R * 0.25, 0, sx, sy, R);
+        d.addColorStop(0, "#FFFEF8");
+        d.addColorStop(0.45, C.sun);
+        d.addColorStop(1, hexA(C.sun, 0.9));
+        g.fillStyle = d;
+        g.beginPath();
+        g.arc(sx, sy, R, 0, Math.PI * 2);
+        g.fill();
+
+        /* Haze, deeper and taller than it was: distance is what sells a
+     horizon, and it also sits the cloud bands behind air rather than on
+     top of the sea. */
+        var hzT = H - h * 0.2;
+        var hz = g.createLinearGradient(0, hzT, 0, H);
+        hz.addColorStop(0, hexA(C.hor, 0));
+        hz.addColorStop(0.55, hexA(C.hor, 0.28));
+        hz.addColorStop(1, hexA(C.hor, 0.6));
+        g.fillStyle = hz;
+        g.fillRect(0, hzT, w, h * 0.2);
+        g.restore();
+
+        var sea = g.createLinearGradient(0, H, 0, h);
+        sea.addColorStop(0, C.hor);
+        sea.addColorStop(0.08, mix(C.hor, C.sea, 0.55));
+        sea.addColorStop(0.32, C.sea);
+        sea.addColorStop(1, C.deep);
+        g.fillStyle = sea;
+        g.fillRect(0, H, w, h - H + 1);
+
+        var hl = g.createLinearGradient(0, 0, w, 0);
+        hl.addColorStop(0, hexA(C.sun, 0));
+        hl.addColorStop(0.5, hexA(C.sun, 0.34));
+        hl.addColorStop(1, hexA(C.sun, 0));
+        g.fillStyle = hl;
+        g.fillRect(0, H - 0.5, w, 1);
+
+        /* Sun glitter: the reflection column, widening and dimming with
+     distance. The y jitter and the wider length spread are what stop it
+     reading as a grid of dashes — rows on fixed baselines were the tell.
+     Each speck is the cached soft blob rather than a filled rectangle;
+     hard corners were the other half of why it read as a barcode. */
+        var sp = glint(C.sun);
+        var ph = Math.floor(t * 8);
+        for (var i = 0; i < o.rows; i++) {
+          var tt = i / o.rows;
+          var y = H + Math.pow(tt, 1.35) * (h - H);
+          var yn = H + Math.pow((i + 1) / o.rows, 1.35) * (h - H);
+          var rowH = yn - y;
+          var spread = R * 0.55 + Math.pow(tt, 0.9) * w * 0.19;
+          var a = Math.pow(1 - tt, 1.9) * 0.4 * Math.min(1, tt * 7);
+          if (a < 0.015) continue;
+          var lh = 1 + tt * 1.5;
+          var n = 3 + Math.round(tt * 5);
+          for (var k = 0; k < n; k++) {
+            var s1 = rnd(i * 37.7 + k * 11.3 + ph * 3.1);
+            var s2 = rnd(i * 13.1 + k * 29.7 + ph * 7.7);
+            var s3 = rnd(i * 7.3 + k * 41.1 + ph * 5.3);
+            var len = Math.max(5, (0.1 + Math.pow(s2, 1.7) * 0.34) * spread),
+              /* held at 3:1 or flatter — the short specks near the sun came out
+         round, and a field of round specks reads as dots, not as light */
+              gh = Math.min(lh * 3, len * 0.34);
+            g.globalAlpha = a * (0.18 + s2 * 0.82);
+            g.drawImage(
+              sp,
+              sx + (s1 - 0.5) * 2 * spread - len / 2,
+              y + (s3 - 0.5) * rowH * 0.9 - gh / 2,
+              len,
+              gh,
+            );
+          }
+        }
+        g.globalAlpha = 1;
+      }
+
+      /* A wavy line across the canvas: the leading edge of a wave. `close`
+   shuts the path back to `top` so the same curve can fill the water
+   sheeting up the sand and then stroke its bright edge. */
+      /* Smooth 1D value noise. Foam is patchy and ink is not, so every wave
+   edge is modulated by this along its length — see `foamLine`. */
+      function n1(x, seed) {
+        var i = Math.floor(x),
+          f = x - i;
+        f = f * f * (3 - 2 * f);
+        return rnd(i * 1.37 + seed) * (1 - f) + rnd((i + 1) * 1.37 + seed) * f;
+      }
+
+      /* A wave's leading edge, drawn as short segments so its brightness can
+   break up along its length instead of running edge to edge at one value.
+   A single uniform stroke is what made the old Shore read as a contour map:
+   two octaves of noise, and stretches of it drop out entirely.
+
+   `gap` is how much of the line is missing — 0 keeps it continuous, 0.5
+   leaves about half of it as gaps. Near waves are more broken than far
+   ones, which is also true of real surf and reinforces the perspective. */
+      function foamLine(g, w, y, n, amp, ph, lw, a, col, seed, gap) {
+        /* Segment count follows the projected wavelength. A distant crest is
+     fourteen cycles wide on screen, and 28 segments across fourteen cycles
+     is two samples a cycle — which drew the far swell as a zigzag.
+
+     Geometry is precomputed rather than recomputed inside the bucket loop,
+     and the mask is sampled on a fixed 40-point grid however long the line
+     is. Both are just to keep the trigonometry down: this runs 25 times a
+     second on a phone, and the naive version cost 12 sines a segment. */
+        var N = Math.max(24, Math.min(132, Math.round(n * 9))),
+          B = 4,
+          M = 40,
+          xs = [],
+          ys = [],
+          mk = [],
+          m = [],
+          i,
+          b,
+          lo,
+          hi,
+          any,
+          v;
+        for (i = 0; i < M; i++) {
+          v =
+            n1((i / M) * 5.5 + ph * 0.7, seed) * 0.68 +
+            n1((i / M) * 15 + ph * 1.3, seed + 9) * 0.32;
+          v = (v - gap) / (1 - gap);
+          mk.push(v <= 0.02 ? 0 : Math.min(1, v * 1.7));
+        }
+        for (i = 0; i <= N; i++) {
+          xs.push((i / N) * w);
+          ys.push(y + Math.sin((i / N) * Math.PI * 2 * n + ph) * amp);
+          if (i < N) m.push(mk[Math.floor((i * M) / N)]);
+        }
+        /* Alpha quantised into four bands so each line is four stroke calls
+     rather than N of them. Wide passes butt: a round cap on an 8px stroke
+     turns every gap in the mask into a floating lozenge. */
+        g.lineCap = lw > 2.5 ? "butt" : "round";
+        g.strokeStyle = col;
+        g.lineWidth = lw;
+        for (b = 1; b <= B; b++) {
+          lo = (b - 1) / B;
+          hi = b / B;
+          any = false;
+          g.beginPath();
+          for (i = 0; i < N; i++) {
+            if (m[i] <= lo || m[i] > hi) continue;
+            g.moveTo(xs[i], ys[i]);
+            g.lineTo(xs[i + 1], ys[i + 1]);
+            any = true;
+          }
+          if (!any) continue;
+          g.globalAlpha = a * ((lo + hi) / 2);
+          g.stroke();
+        }
+        g.globalAlpha = 1;
+      }
+
+      function surfEdge(g, w, y, n, amp, ph, top) {
+        var steps = 48,
+          i,
+          x,
+          yy;
+        g.beginPath();
+        if (top != null) {
+          g.moveTo(0, top);
+          g.lineTo(w, top);
+          for (i = steps; i >= 0; i--) {
+            x = (i / steps) * w;
+            yy = y + Math.sin((i / steps) * Math.PI * 2 * n + ph) * amp;
+            g.lineTo(x, yy);
+          }
+          g.closePath();
+          return;
+        }
+        for (i = 0; i <= steps; i++) {
+          x = (i / steps) * w;
+          yy = y + Math.sin((i / steps) * Math.PI * 2 * n + ph) * amp;
+          i ? g.lineTo(x, yy) : g.moveTo(x, yy);
+        }
+      }
+
+      /* ------------------------------------------------------------------
+   THE SHORE — the water's edge, in perspective.
+
+   The previous three passes all failed the same way and it was not the
+   colour: every wave was a full-width sine at roughly the same wavelength,
+   the same amplitude and the same stroke weight, so the strip read as a
+   contour map of ribbons rather than a beach.
+
+   What fixes it is a camera. Ground plane seen from standing height means
+   screen offset from the horizon goes as 1/distance, so one scale factor
+   `sc = near/D` drives everything at once: where a wave sits, how many
+   crests fit across the frame, how tall they are, how heavy the line is
+   and how much haze eats it. Far water gets many tight faint crests, near
+   water gets a few long heavy ones. Constant real speed then reads as
+   acceleration shorewards for free, because sc grows hyperbolically.
+
+   Tone runs bright-at-the-waterline, which is the other thing that was
+   backwards: the old sand got lighter toward the bottom of the frame. At
+   dusk the water's edge is a mirror of the afterglow and the brightest
+   thing down there; damp sand just inside it is the darkest; dry sand
+   nearest the viewer is a mid tone. Every colour is still derived from
+   the scene Roles, so the Shore follows the Theme.
+   ------------------------------------------------------------------ */
+      function paintShore(cv, o) {
+        var q = ctx2d(cv);
+        if (!q) return;
+        var g = q.g,
+          w = q.w,
+          h = q.h,
+          C = roles(),
+          t = o.t;
+        var Hs = h * 0.3, /* horizon */
+          Hw = h * 0.585; /* mean waterline */
+
+        /* Perspective: sc is 1 at the viewer's feet (y = h) and approaches 0
+     at the horizon. Everything below keys off it. */
+        var span = h - Hs;
+        function yOf(sc) {
+          return Hs + span * sc;
+        }
+        var scTide = (Hw - Hs) / span, /* the break */
+          scHz = 0.045; /* nearest usable distance to the horizon */
+
+        /* Late, but not dark. The sun is half sunk at the waterline, right of
+     centre, sitting in the afterglow that was already there. It used to be
+     no disc at all — the premise being that the Shore is a later hour than
+     the Hero — and the client read that as a sun missing rather than as a
+     sun set. It is still a different moment: the Hero's is a whole disc
+     dead centre, this one is half gone and off to one side. */
+        var sky = g.createLinearGradient(0, 0, 0, Hs);
+        sky.addColorStop(0, C.top);
+        sky.addColorStop(0.58, mix(C.top, C.mid, 0.8));
+        sky.addColorStop(1, mix(C.mid, C.hor, 0.55));
+        g.fillStyle = sky;
+        g.fillRect(0, 0, w, Hs + 1);
+
+        var ax = w * 0.68;
+        g.save();
+        g.beginPath();
+        g.rect(0, 0, w, Hs);
+        g.clip();
+        var ag = g.createRadialGradient(ax, Hs, 0, ax, Hs, w * 0.55);
+        ag.addColorStop(0, hexA(C.hor, 0.55));
+        ag.addColorStop(0.4, hexA(C.hor, 0.17));
+        ag.addColorStop(1, hexA(C.hor, 0));
+        g.fillStyle = ag;
+        g.fillRect(0, 0, w, Hs);
+
+        /* Centred ON the waterline, and drawn inside the sky clip — so the
+     clip cuts exactly half of it and there is no arithmetic to get wrong.
+     A hot core rather than a flat fill: the limb has to fall off or the
+     disc reads as a sticker. */
+        var sr = w * 0.075;
+        var sg = g.createRadialGradient(ax, Hs, 0, ax, Hs, sr);
+        sg.addColorStop(0, mix(C.sun, "#ffffff", 0.62));
+        sg.addColorStop(0.55, mix(C.sun, "#ffffff", 0.22));
+        sg.addColorStop(0.9, C.sun);
+        sg.addColorStop(1, hexA(C.sun, 0.72));
+        g.fillStyle = sg;
+        g.beginPath();
+        g.arc(ax, Hs, sr, 0, Math.PI * 2);
+        g.fill();
+
+        /* the air immediately around it, which is what stops the limb being an
+     edge against the sky */
+        var bl = g.createRadialGradient(ax, Hs, sr * 0.85, ax, Hs, sr * 2.7);
+        bl.addColorStop(0, hexA(mix(C.sun, "#ffffff", 0.3), 0.5));
+        bl.addColorStop(1, hexA(C.sun, 0));
+        g.fillStyle = bl;
+        g.fillRect(0, 0, w, Hs);
+        g.restore();
+
+        /* ---- sand, laid first; the sea is painted over it ---- */
+        /* `dry` and `foot` used to carry 40% and 20% of the deep-sea colour,
+     which is what made the whole lower frame heavy and grey-mauve — sand
+     tinted towards the water reads as wet cement. The blue is mostly out
+     now and the near sand is lifted and warmed instead. The damp band just
+     inside the waterline stays dark: that contrast is what makes it read
+     as a beach rather than as a gradient, and it is the one part of the
+     tone reversal worth keeping. */
+        var damp = mix(mix(C.sea, C.hor, 0.34), C.deep, 0.44),
+          dry = mix(mix(mix(C.hor, C.sun, 0.5), "#ffffff", 0.44), C.deep, 0.12),
+          foot = mix(dry, C.sun, 0.1);
+        var sandTop = Hw - h * 0.03;
+        var sand = g.createLinearGradient(0, sandTop, 0, h);
+        sand.addColorStop(0, damp);
+        sand.addColorStop(0.3, mix(damp, dry, 0.72));
+        sand.addColorStop(0.78, dry);
+        sand.addColorStop(1, foot);
+        g.fillStyle = sand;
+        g.fillRect(0, sandTop, w, h - sandTop + 1);
+
+        g.drawImage(sandTexture(w, h, sandTop, C), 0, 0, w, h);
+
+        /* The high-water mark: where the last big wave reached and the sand is
+     still dark. It barely moves, which is exactly why it reads as sand
+     rather than as another wave. */
+        var hwm = yOf(scTide + (1 - scTide) * 0.52);
+        g.save();
+        g.beginPath();
+        g.rect(0, sandTop, w, h - sandTop);
+        g.clip();
+        var hg = g.createLinearGradient(0, hwm - h * 0.06, 0, hwm + h * 0.02);
+        hg.addColorStop(0, hexA(C.deep, 0));
+        hg.addColorStop(0.8, hexA(C.deep, 0.16));
+        hg.addColorStop(1, hexA(C.deep, 0));
+        g.fillStyle = hg;
+        surfEdge(g, w, hwm, 2.2, h * 0.014, 1.7, sandTop);
+        g.fill();
+        foamLine(
+          g, w, hwm, 2.2, h * 0.014, 1.7, 1,
+          0.12, mix(C.sun, "#ffffff", 0.6), 77, 0.42,
+        );
+        g.restore();
+
+        /* ---- wet sheen: the mirror at the water's edge ---- */
+        var wetH = (h - Hw) * 0.34;
+        var sh = g.createLinearGradient(0, Hw - h * 0.02, 0, Hw + wetH);
+        sh.addColorStop(0, hexA(mix(C.hor, C.sun, 0.55), 0.5));
+        sh.addColorStop(0.3, hexA(mix(C.hor, C.sun, 0.35), 0.2));
+        sh.addColorStop(1, hexA(C.hor, 0));
+        g.fillStyle = sh;
+        g.fillRect(0, Hw - h * 0.02, w, wetH + h * 0.02);
+        /* biased toward the afterglow, because a mirror reflects what is above it */
+        var shr = g.createRadialGradient(ax, Hw, 0, ax, Hw, w * 0.45);
+        shr.addColorStop(0, hexA(mix(C.hor, C.sun, 0.6), 0.2));
+        shr.addColorStop(1, hexA(C.hor, 0));
+        g.fillStyle = shr;
+        g.fillRect(0, Hw - h * 0.04, w, wetH);
+
+        /* ---- the sea, down to the break ---- */
+        var tide = Hw + Math.sin(t * 0.2) * h * 0.01,
+          tAmp = h * 0.016,
+          tN = 2.4;
+        var sea = g.createLinearGradient(0, Hs, 0, tide);
+        sea.addColorStop(0, mix(C.hor, C.sea, 0.42));
+        sea.addColorStop(0.3, mix(C.sea, C.deep, 0.34));
+        sea.addColorStop(0.82, C.sea);
+        sea.addColorStop(1, mix(C.sea, C.hor, 0.6)); /* shallows show the sand */
+        g.fillStyle = sea;
+        surfEdge(g, w, tide, tN, tAmp, t * 0.5, Hs - 1);
+        g.fill();
+
+        var hl = g.createLinearGradient(0, 0, w, 0);
+        hl.addColorStop(0, hexA(C.hor, 0));
+        hl.addColorStop(0.68, hexA(C.hor, 0.5));
+        hl.addColorStop(1, hexA(C.hor, 0));
+        g.fillStyle = hl;
+        g.fillRect(0, Hs - 0.5, w, 1);
+        g.fillStyle = hexA(mix(C.deep, C.sea, 0.5), 0.5);
+        g.fillRect(0, Hs, w, 0.9);
+
+        /* The path the sun lays on the water, from the waterline down to the
+     break. It widens towards the viewer because the further you look the
+     shallower the angle, so fewer facets are turned the right way — the
+     same reason a glitter column is a wedge and not a stripe.
+
+     Banded rather than a single clipped wedge: a wedge with hard sides is a
+     spotlight, and that is exactly what the first attempt looked like. Each
+     band gets its own horizontal falloff, its own jitter and its own alpha,
+     so the column reads as facets catching the light. The swell crests are
+     drawn after this and break it up further. */
+        var glTop = mix(C.sun, "#ffffff", 0.5);
+        var GN = 30;
+        for (var gi = 0; gi < GN; gi++) {
+          var gt = gi / (GN - 1);
+          var gy = Hs + (tide - Hs) * gt;
+          /* half-width grows towards the viewer, alpha falls; the jitter is
+       what stops thirty stacked gradients reading as one solid beam */
+          var ghw = w * (0.017 + 0.062 * gt * gt);
+          var gj = (Math.sin(gi * 2.7 + 1.3) * 0.5 + Math.sin(gi * 6.1) * 0.3) *
+            w * 0.006;
+          var ga = (0.6 - 0.5 * gt) * (0.72 + 0.28 * Math.sin(gi * 4.3));
+          var gg2 = g.createLinearGradient(ax - ghw + gj, 0, ax + ghw + gj, 0);
+          gg2.addColorStop(0, hexA(glTop, 0));
+          gg2.addColorStop(0.5, hexA(gi < GN * 0.4 ? glTop : C.sun, ga));
+          gg2.addColorStop(1, hexA(glTop, 0));
+          g.fillStyle = gg2;
+          g.fillRect(
+            ax - ghw + gj,
+            gy,
+            ghw * 2,
+            (tide - Hs) / GN + 0.6,
+          );
+        }
+
+        var foam = mix(C.sun, "#ffffff", 0.55);
+
+        /* Swell coming in. Five crests at constant real speed between scHz and
+     the break; sc does the rest. m is distance in units of the break's
+     distance, so m decreasing linearly is a wave travelling at a steady
+     speed, and the screen acceleration falls out of the projection. */
+        var M = scTide / scHz; /* the break is M times nearer than the far chop */
+        g.save();
+        g.beginPath();
+        g.rect(0, Hs, w, tide - Hs);
+        g.clip();
+        for (var i = 0; i < 5; i++) {
+          var pr = (t * 0.075 + i / 5) % 1,
+            m = Math.pow(M, 1 - pr),
+            sc = scTide / m,
+            r = sc / scTide, /* 0 at the horizon, 1 at the break */
+            cy = yOf(sc);
+          /* One real wavelength projects to sc of the frame, so the far crests
+       want ~23 cycles. Capped at 14: past that a swell is flatter than a
+       pixel and only fine chop is left, which is what it looks like.
+       Amplitude and weight fall off faster than length; haze does the
+       rest, and distant water is less broken, not more. */
+          var cn = Math.min(14, tN / r),
+            camp = tAmp * Math.pow(r, 1.35),
+            /* fades out as it reaches the break, where it becomes the breaker
+       and the break's own line takes over */
+            ca =
+              0.46 *
+              (0.24 + 0.76 * r) *
+              Math.min(1, pr * 6) *
+              (1 - Math.pow(pr, 4)),
+            cph = i * 2.1 + t * 0.1,
+            sd = i * 31 + 5;
+          /* A swell seen almost edge-on is a band, not a line — stroked thin
+       it read as a pen scratch on the water. Wide and faint is the lit
+       face, a darker pass just below it is the shadowed back, and only
+       waves close to breaking get white water on the crest. */
+          foamLine(g, w, cy + 1 + r * 3, cn, camp, cph,
+            1 + r * 2.4, ca * 0.4, C.deep, sd, 0.08);
+          foamLine(g, w, cy, cn, camp, cph,
+            1.4 + r * 3.6, ca * 0.26, foam, sd, 0.06);
+          if (r > 0.3)
+            foamLine(g, w, cy, cn, camp, cph,
+              0.6 + r * 1.2, ca * 0.95, foam, sd + 7, 0.3 + r * 0.2);
+        }
+        g.restore();
+
+        /* Surf on the sand. Three runs out of phase, each sheeting up fast and
+     draining back slowly — the asymmetry is what makes water look like
+     water. Kept thin and low-contrast on purpose: bright and heavy, foam
+     reads as rope. */
+        var run = (h - Hw) * 0.74;
+        g.save();
+        g.beginPath();
+        g.rect(0, tide - 2, w, h - tide + 2);
+        g.clip();
+        for (var k = 0; k < 3; k++) {
+          var pp = (t / 4.6 + k / 3) % 1,
+            adv = pp < 0.26 ? pp / 0.26 : 1 - (pp - 0.26) / 0.74;
+          adv = Math.sin(adv * Math.PI * 0.5);
+          var lead = tide + adv * run,
+            a = (1 - pp * pp) * 0.5,
+            /* nearer the viewer, so longer and taller than the swell */
+            amp = tAmp * (0.7 + adv * 0.9),
+            n = tN * (1 - adv * 0.3),
+            ph = k * 1.9;
+
+          var wash = g.createLinearGradient(0, tide, 0, lead);
+          wash.addColorStop(0, hexA(mix(C.sea, C.hor, 0.45), a * 0.3));
+          wash.addColorStop(0.7, hexA(foam, a * 0.08));
+          wash.addColorStop(1, hexA(foam, a * 0.24));
+          g.fillStyle = wash;
+          surfEdge(g, w, lead, n, amp, ph, tide - 2);
+          g.fill();
+
+          foamLine(
+            g, w, lead, n, amp, ph,
+            1 + adv * 1.4, a * 0.85, foam, k * 17 + 3,
+            0.16 + adv * 0.26,
+          );
+        }
+        g.restore();
+
+        /* The break itself, last so nothing sits on top of it: a soft halo and
+     a broken bright line where the water turns over. */
+        g.strokeStyle = hexA(foam, 0.14);
+        g.lineWidth = 6;
+        surfEdge(g, w, tide, tN, tAmp, t * 0.5, null);
+        g.stroke();
+        foamLine(g, w, tide, tN, tAmp, t * 0.5, 2, 0.72, foam, 101, 0.34);
+        /* a second, finer pass at a different phase so the breaks in one are
+     not the breaks in the other — a hard edge with soft interruptions */
+        foamLine(g, w, tide, tN, tAmp, t * 0.5, 0.9, 0.5, foam, 44, 0.22);
+      }
+
+      var sky = document.getElementById("sky"),
+        strip = document.getElementById("venue-strip");
+      /* Each Scene keeps its own cadence. The Sunset only shimmers, so eight
+   frames a second is plenty and costs almost nothing; the Shore has water
+   crossing it, and at eight the surf visibly steps. */
+      var SCENES = [
+        {
+          cv: sky,
+          paint: paintSunset,
+          ms: 118,
+          vis: false,
+          last: -1e9,
+          o: { horizon: 0.76, sunR: 0.072, sunLift: 0.1, rows: 30, t: 0 },
+        },
+        {
+          cv: strip,
+          paint: paintShore,
+          ms: 40,
+          vis: false,
+          last: -1e9,
+          o: { t: 0 },
+        },
+      ];
+      function now() {
+        return (
+          (typeof performance !== "undefined" && performance.now
+            ? performance.now()
+            : Date.now()) / 1000
+        );
+      }
+      function paintAll() {
+        var t = now();
+        for (var i = 0; i < SCENES.length; i++) {
+          SCENES[i].o.t = t;
+          SCENES[i].paint(SCENES[i].cv, SCENES[i].o);
+        }
+      }
+
+      /* ============ PALETTE SWITCHER — DELETE ONCE SOHA PICKS ============
+   Then hardcode: root.dataset.palette = 'herChoice';
+   ================================================================ */
+      var THEMES = [
+        { id: "shell", name: "Shell", dot: "#FFF8F3", ring: "#D1396C" },
+        { id: "coral", name: "Coral", dot: "#FFE4D6", ring: "#F2774D" },
+        { id: "sorbet", name: "Sorbet", dot: "#FFD9E7", ring: "#FC6E00" },
+        { id: "sunset", name: "Sunset", dot: "#A63D00", ring: "#FDDA26" },
+        {
+          id: "goodvibes",
+          name: "Good Vibes",
+          dot: "#9A2149",
+          ring: "#FFD55D",
+        },
+      ];
+      var sw = document.getElementById("theme-switch");
+      function setTheme(id) {
+        root.dataset.palette = id;
+        var t =
+          THEMES.filter(function (x) {
+            return x.id === id;
+          })[0] || THEMES[0];
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute("content", t.dot);
+        Array.prototype.forEach.call(
+          sw.querySelectorAll(".sw-dot"),
+          function (d) {
+            d.setAttribute("aria-checked", String(d.dataset.theme === id));
+            d.tabIndex = d.dataset.theme === id ? 0 : -1;
+          },
+        );
+        try {
+          localStorage.setItem("kts-palette", id);
+        } catch (e) {}
+        paintAll();
+      }
+      THEMES.forEach(function (t) {
+        var b = document.createElement("button");
+        b.className = "sw-dot";
+        b.type = "button";
+        b.setAttribute("role", "radio");
+        b.dataset.theme = t.id;
+        b.title = t.name;
+        b.setAttribute("aria-label", t.name);
+        b.style.background =
+          "linear-gradient(135deg," + t.dot + " 0 52%," + t.ring + " 52% 100%)";
+        b.addEventListener("click", function () {
+          setTheme(t.id);
+        });
+        sw.appendChild(b);
+      });
+      sw.addEventListener("keydown", function (e) {
+        var ids = THEMES.map(function (t) {
+            return t.id;
+          }),
+          i = ids.indexOf(root.dataset.palette),
+          j = -1;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown")
+          j = (i + 1) % ids.length;
+        if (e.key === "ArrowLeft" || e.key === "ArrowUp")
+          j = (i - 1 + ids.length) % ids.length;
+        if (j > -1) {
+          e.preventDefault();
+          setTheme(ids[j]);
+          sw.querySelectorAll(".sw-dot")[j].focus();
+        }
+      });
+      /* ==================== END PALETTE SWITCHER ==================== */
+
+      /* ---------- the frame loop ----------
+   Every Scene is observed, not just the Hero's. The old loop watched #sky
+   alone and repainted both canvases from it, which meant the Shore was
+   frozen for the entire time it was on screen — the Hero is 100svh, so by
+   the time you reach the venue card the observer has long since cancelled
+   the loop — while burning paint on an off-screen canvas the rest of the
+   time. Now each Scene paints only while it is visible, at its own rate. */
+      var reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+      var raf = null;
+      function tick(ts) {
+        var live = false;
+        for (var i = 0; i < SCENES.length; i++) {
+          var s = SCENES[i];
+          if (!s.vis) continue;
+          live = true;
+          if (ts - s.last > s.ms) {
+            s.last = ts;
+            s.o.t = now();
+            s.paint(s.cv, s.o);
+          }
+        }
+        raf = live ? requestAnimationFrame(tick) : null;
+      }
+      function wake() {
+        if (!reduce && !raf) raf = requestAnimationFrame(tick);
+      }
+      if (!reduce && "IntersectionObserver" in window) {
+        var io = new IntersectionObserver(
+          function (es) {
+            for (var i = 0; i < es.length; i++) {
+              for (var j = 0; j < SCENES.length; j++) {
+                if (SCENES[j].cv === es[i].target)
+                  SCENES[j].vis = es[i].isIntersecting;
+              }
+            }
+            wake();
+          },
+          { threshold: 0 },
+        );
+        for (var si = 0; si < SCENES.length; si++) io.observe(SCENES[si].cv);
+      }
+      var rt;
+      addEventListener("resize", function () {
+        clearTimeout(rt);
+        /* the cloud layers are sized to the canvas, so they have to go */
+        cloudLayers = null;
+        rt = setTimeout(paintAll, 150);
+      });
+
+      /* ---------- envelope ---------- */
+      var env = document.getElementById("envelope"),
+        invite = document.getElementById("invite"),
+        opened = false;
+      /* Choreography, in one place so it can be read as a sequence:
+     0.00  seal pops away; brand and hint fade
+     0.13  the four leaves part, top first, uncovering the window
+     0.48  the push begins, and the window grows with the card
+     0.91  the last leaf is gone
+     1.00  the Sunset's sun enters the window (about scale 2)
+     1.08  the camera has arrived — the Hero's type comes up
+     1.50  the Envelope is gone
+   Under reduced motion the global transition override collapses all of it,
+   so the two waits collapse with it rather than leaving a blank hero. */
+      /* The reference's sequence, to the millisecond: click, then a 3.375s
+   push with the flame kindling at 2.2s, then — on the video's `ended`,
+   which for us is just the end of the push — the whole overlay dissolves
+   over 1000ms onto the invitation. T_PUSH is the reference video's exact
+   duration; the flame's 2.2s start lives in the CSS animation-delay. */
+      var T_PUSH = reduce ? 0 : 3375,
+        T_FADE = reduce ? 60 : 1000;
+
+      /* The card's size and the camera's travel, in one place.
+
+   The card COVERS the viewport at rest — see `--card-w` in the CSS for
+   the geometry and for why the cap is 1.5 viewport widths. It is
+   computed here as well as there because `100vh` on a phone is the
+   large viewport (the height with the URL bar retracted), and sizing a
+   full-height card off it puts a slice of the envelope permanently past
+   the bottom of the screen. `#envelope` is `position: fixed; inset: 0`,
+   so its own box IS the viewport the guest is actually looking at.
+
+   The push is now a constant. It used to be measured, because the card
+   started smaller than the frame and the push had to close that gap;
+   the gap is gone, so this is a camera creeping in on a shot that is
+   already framed. 1.3 against the reference's own 1.16 — longer,
+   because ours has no film grain to hide a shorter one.
+
+   Frozen once the push starts: a resize mid-animation would retarget the
+   transform and jump. */
+      var CARD_AR = 1.5, /* 3:2 */
+        CARD_CAP = 1.5, /* max card width, in viewport widths */
+        PUSH = 1.3;
+      function sizeCamera() {
+        if (opened) return;
+        var vw = env.clientWidth || window.innerWidth,
+          vh = env.clientHeight || window.innerHeight;
+        if (!vw || !vh) return;
+        var w = Math.min(Math.max(vw, vh * CARD_AR), vw * CARD_CAP);
+        env.style.setProperty("--card-w", Math.round(w) + "px");
+        env.style.setProperty("--cam-end", PUSH.toFixed(4));
+      }
+      sizeCamera();
+      window.addEventListener("resize", sizeCamera);
+
+      function openInvite() {
+        if (opened) return;
+        sizeCamera();
+        opened = true;
+        env.classList.add("open");
+        invite.removeAttribute("aria-hidden");
+        window.scrollTo(0, 0);
+        paintAll();
+        wake();
+        startMusic();
+        /* `locked` holds the scroll lock AND the Sunset's arrival parallax, so
+     it is released when the dissolve starts rather than on the click —
+     otherwise the sky has finished settling before anyone can see it. */
+        setTimeout(function () {
+          root.classList.remove("locked");
+          env.classList.add("gone");
+        }, T_PUSH);
+        setTimeout(
+          function () {
+            root.classList.add("landed");
+          },
+          T_PUSH + T_FADE * 0.55,
+        );
+        setTimeout(
+          function () {
+            env.remove();
+            startRoll();
+          },
+          T_PUSH + T_FADE + 120,
+        );
+      }
+      document.getElementById("seal").addEventListener("click", openInvite);
+
+      /* ---------- the roll ----------------------------------------------
+   The invitation scrolls itself, top to bottom, once the envelope is gone
+   and the Hero has landed. Constant pixels per second rather than a fixed
+   duration: the page is much taller on a phone than on a desktop, and a
+   fixed duration would race through it on exactly the devices most guests
+   will use.
+
+   HOLD_MS is the beat on the Hero before it starts. The sunset is the
+   payoff of the whole opening sequence and moving off it immediately
+   throws that away.
+
+   It yields to the guest completely and permanently. Any wheel, touch,
+   key or scrollbar drag cancels it and it never resumes — a page that
+   takes the scroll back after you have grabbed it is worse than one that
+   never moved. `programmatic` is how a scroll this code caused is told
+   apart from one the guest caused, since both raise the same event.
+   ------------------------------------------------------------------- */
+      var ROLL_PPS = 46,
+        HOLD_MS = 2000,
+        rollId = 0,
+        rolling = false,
+        rollExpect = -1;
+
+      function stopRoll() {
+        if (!rolling) return;
+        rolling = false;
+        rollExpect = -1;
+        cancelAnimationFrame(rollId);
+        root.style.scrollBehavior = "";
+      }
+      function startRoll() {
+        if (reduce || rolling) return;
+        setTimeout(function () {
+          if (!opened) return;
+          var last = 0,
+            pos = window.scrollY;
+          rolling = true;
+          rollExpect = Math.round(pos);
+          /* `html` carries `scroll-behavior: smooth` for the anchor links, and
+       that turns every one of the sixty `scrollTo` calls a second into its
+       own smooth animation, each one superseding the last before it has
+       gone anywhere. The target climbed past 1000px while the page sat at
+       0. Suspend it for the duration and hand it back in stopRoll — the
+       anchors still want it. */
+          root.style.scrollBehavior = "auto";
+          rollId = requestAnimationFrame(function step(t) {
+            if (!rolling) return;
+            if (!last) last = t;
+            var dt = Math.min(t - last, 64) / 1000;
+            last = t;
+            pos += ROLL_PPS * dt;
+            var end =
+              document.documentElement.scrollHeight - window.innerHeight;
+            if (pos >= end) pos = end;
+            rollExpect = Math.round(pos);
+            window.scrollTo(0, pos);
+            if (pos >= end) {
+              rolling = false;
+              root.style.scrollBehavior = "";
+              return;
+            }
+            rollId = requestAnimationFrame(step);
+          });
+        }, HOLD_MS);
+      }
+      /* Telling our own scroll apart from the guest's. A boolean flag set
+   before each `scrollTo` looks like the obvious way and is wrong: when a
+   frame's movement rounds to the pixel the page is already on, no scroll
+   event fires at all, the flag is never cleared, and the guest's next real
+   scroll is silently swallowed by it. Comparing against the position we
+   last asked for has no such hole — if the page is where we put it, the
+   event was ours. */
+      window.addEventListener(
+        "scroll",
+        function () {
+          if (!rolling) return;
+          if (Math.abs(window.scrollY - rollExpect) <= 2) return;
+          stopRoll();
+        },
+        { passive: true },
+      );
+      ["wheel", "touchstart", "pointerdown", "keydown"].forEach(function (e) {
+        window.addEventListener(e, stopRoll, { passive: true });
+      });
+
+      /* ---------- music: clip window matches the reference invite ---------- */
+      var CLIP_START = 35,
+        CLIP_END = 170;
+      var audio = document.getElementById("audio"),
+        mbtn = document.getElementById("music-btn"),
+        hasAudio = false;
+      audio.addEventListener("canplay", function () {
+        hasAudio = true;
+        if (opened) mbtn.classList.add("show");
+      });
+      audio.addEventListener("error", function () {
+        hasAudio = false;
+        mbtn.classList.remove("show");
+      });
+      audio.addEventListener("timeupdate", function () {
+        if (audio.currentTime >= CLIP_END) audio.currentTime = CLIP_START;
+      });
+      function startMusic() {
+        audio.load();
+        try {
+          audio.currentTime = CLIP_START;
+        } catch (e) {}
+        audio
+          .play()
+          .then(function () {
+            mbtn.classList.add("show");
+            mbtn.setAttribute("aria-pressed", "true");
+          })
+          .catch(function () {
+            if (hasAudio) {
+              mbtn.classList.add("show");
+              mbtn.setAttribute("aria-pressed", "false");
+            }
+          });
+      }
+      mbtn.addEventListener("click", function () {
+        if (audio.paused) {
+          if (audio.currentTime < CLIP_START || audio.currentTime > CLIP_END)
+            audio.currentTime = CLIP_START;
+          audio
+            .play()
+            .then(function () {
+              mbtn.setAttribute("aria-pressed", "true");
+            })
+            .catch(function () {});
+        } else {
+          audio.pause();
+          mbtn.setAttribute("aria-pressed", "false");
+        }
+      });
+
+      setTheme(root.dataset.palette || "shell");
+      addEventListener("load", paintAll);
+    </script>
+  </body>
+</html>

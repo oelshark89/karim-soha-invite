@@ -1,0 +1,25 @@
+# This repo is PUBLIC, because GitHub Pages on a free account requires it.
+# Only what the site itself serves belongs here.
+#
+# The internal docs are deliberately excluded, not forgotten. The design log
+# quotes the client's own candid feedback verbatim and contains a frame-by-frame
+# teardown of another product's video assets, including its storage URLs. None
+# of that should sit on a public URL under anyone's name. Keep them local, or
+# put them in a separate PRIVATE repo if history is wanted.
+CONTEXT.md
+docs/
+tools/
+assets-monogram-mask.png
+
+# Derived for the claude.ai preview link, not served by this host.
+artifact.html
+
+# Local screenshots from tools/shoot.sh and tools/freeze.sh
+shot-*.png
+freeze-*.png
+
+.DS_Store
+
+# The build notes reference a private claude.ai preview link and the file's
+# reformatting history. Not for a public repo. Kept local.
+README.md
