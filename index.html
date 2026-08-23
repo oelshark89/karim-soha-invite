@@ -9,7 +9,7 @@
     <title>Karim &amp; Soha &mdash; Engagement</title>
     <meta
       name="description"
-      content="Karim &amp; Soha are celebrating their engagement on Friday, 11 September 2026 at Amoun Resort, Kilo 31 — North Coast."
+      content="Karim &amp; Soha are celebrating their engagement on Friday, 11 September 2026 at Amoun Resort, Kilo 36 — North Coast."
     />
     <meta name="theme-color" content="#FFF8F3" />
     <meta
@@ -18,7 +18,7 @@
     />
     <meta
       property="og:description"
-      content="Friday, 11 September 2026 · Amoun Resort, Kilo 31 — North Coast"
+      content="Friday, 11 September 2026 · Amoun Resort, Kilo 36 — North Coast"
     />
     <meta property="og:type" content="website" />
     <!-- Absolute URLs, because WhatsApp and iMessage do not resolve relative
@@ -320,6 +320,9 @@
         font-size: 1.08rem;
         text-wrap: pretty;
       }
+      .times-new-roman {
+        font-family: "Times New Roman", Times, serif;
+      }
       a {
         color: inherit;
       }
@@ -478,36 +481,57 @@
          looking at the item's left edge, which showed the envelope's corner
          and no seal at all. Nothing overflows at rest now, but anything that
          scales the stage past 1.0 puts it back over the edge. */
-      /* PHONES COVER. The stage takes the full width and its height is whatever
-         9:20 makes of that — which is TALLER than any phone, so it overflows
-         and #opener's `overflow: hidden` crops it. That is the whole of the
-         full-bleed rule: one aspect-ratio, no script, no second breakpoint.
+      /* PHONES COVER. The stage is still the film's 9:20 frame, but its width
+         is allowed to bind to viewport height when the screen is taller than
+         the film. A 320x740 browser viewport is exactly that case: 100% width
+         made a 711px-tall frame and left a cream band at the bottom. This rule
+         grows the frame to 740px tall and lets #opener's `overflow: hidden`
+         take the few pixels of side crop.
 
          The film is 9:20 because THE COUPLE SHOT IT THAT WAY. An earlier round
          faked this ratio by padding their 9:16 frame with mirrored rows; that
          is gone, and no invented pixel reaches a guest.
 
          9:20 is the number because it is taller than every mainstream phone, so
-         covering crops HEIGHT and never width — and width is the axis that
-         cannot afford it, with the birds running to x 0-100% of the frame. The
-         crop budget the pipeline prints is 25.2% top and 27.8% bottom against
-         0.0% on both sides, which is the whole argument for this ratio in two
-         numbers. A 9:19.5 phone takes 2.5% of the height, a 9:16 one 20%. */
+         covering usually crops height instead of width. Very narrow browser
+         viewports can invert that by a few pixels; filling the screen matters
+         more than preserving the cream band, and the centred crop is small. */
       #opener-stage {
         position: absolute;
         left: 50%;
         top: 50%;
-        width: 100%;
+        width: max(100%, calc(100vh * 720 / 1600));
+        width: max(100%, calc(100dvh * 720 / 1600));
         aspect-ratio: 720 / 1600;
         translate: -50% -50%;
         will-change: transform;
       }
-      /* Past 9:16 the crop would start eating the couple's own frame rather
-         than the margin around it, so it stops covering and becomes the inset
-         panel instead. iPad portrait is the only viewport left in this band —
-         every phone is below it and everything square or wider is caught by the
-         landscape rule underneath. */
-      @media (min-aspect-ratio: 9 / 16) {
+      /* The inset panel, for a screen too big to wear a portrait film
+         full-bleed. iPad portrait is the only viewport that lands here; phones
+         cover, and everything square or wider is caught by the landscape rule
+         underneath.
+
+         KEYED ON WIDTH, AND THAT IS A BUG FIX. This was `min-aspect-ratio:
+         9/16` on the reasoning that every phone is taller than 9:16 and so
+         could never match. Every phone *device* is. A phone *browser viewport*
+         is not: Safari spends roughly 18% of the height on its top and bottom
+         toolbars, which took a real iPhone from 9:19.5 (0.46) to 738x1230
+         (0.60) — past 0.5625, so the media query fired and a guest got the
+         tablet panel, a small envelope adrift in cream, on a phone. Reported
+         from a real device; every viewport in check-opener.py is a full-screen
+         device size with no browser chrome, so nothing here caught it.
+
+         Width does not have that failure mode. Browser furniture takes height,
+         not width, so a phone's viewport width is its device width: 430px at
+         the widest, against 768 for the narrowest tablet. 700 sits between
+         them with room on both sides.
+
+         Covering is also safe much further than 9:16 ever implied. The film is
+         the couple's own 9:20 with the birds at y 25.2-72.2%, so a cover crop
+         keeps them until the viewport reaches about 0.91 — nearly square, and
+         far past any phone holding a browser. The old breakpoint was not
+         protecting anything at 0.5625. */
+      @media (min-width: 700px) {
         #opener-stage {
           width: auto;
           height: 86%;
@@ -766,14 +790,15 @@
         width: 100%;
         height: 100%;
         /* Portrait film: the framing rule inverts relative to the Opener.
-           Cover on phones; contain past the film's own 9:16, where covering
-           would show 35% of its height and lose both the sky and the sand
-           path. */
+           Cover on phones, including browser viewports that become slightly
+           wider than 9:16 after mobile UI takes height away. The side bands
+           were coming from that exact case at 425x740. Tablet and desktop
+           widths keep the contained invitation-card treatment. */
         object-fit: cover;
         z-index: 0;
         transition: opacity 600ms linear;
       }
-      @media (min-aspect-ratio: 9 / 16) {
+      @media (min-width: 700px) {
         .hero-film {
           object-fit: contain;
         }
@@ -1125,8 +1150,17 @@
 
          It is the SAME construction as .sketch-dress below, at HALF the
          depth, and the asymmetry is measured rather than chosen. The dress's
-         own background is rgb(248,244,242) and --sketch-ground is #f8f4f2 --
-         distance 0 -- so its feather is invisible: it hides a seam. The venue
+         own background is rgb(242,240,239) and --sketch-ground is #f8f4f2 --
+         distance 6 -- so its feather has almost nothing to cross. It USED to
+         have literally nothing: the retired line-up measured rgb(248,244,242),
+         distance 0. The colourful one the couple supplied 2026-08-23 has a
+         cooler, slightly darker ground, and rendered on the page's warm cream
+         its interior reads rgb(236,235,230) against rgb(255,243,235) -- 19/255,
+         where the old file was 9. That is a soft haze at the picture's edge,
+         not an edge, and the feather is what keeps it soft. Deepening the
+         feather to swallow the rest is NOT the fix: this line-up puts figures
+         within 2% of its right edge and 6% already fades an arm. If the haze
+         ever needs to go, the ground has to be lifted in the FILE. The venue
          photo's edges are nowhere near the page ground:
 
            top (sky)    rgb(234,193,191)   78 from --ground
@@ -1295,14 +1329,30 @@
       .rainbow > i {
         font-style: inherit;
       }
-      .rainbow > i:nth-child(1) { color: var(--hue-1); }
-      .rainbow > i:nth-child(2) { color: var(--hue-2); }
-      .rainbow > i:nth-child(3) { color: var(--hue-3); }
-      .rainbow > i:nth-child(4) { color: var(--hue-4); }
-      .rainbow > i:nth-child(5) { color: var(--hue-5); }
-      .rainbow > i:nth-child(6) { color: var(--hue-6); }
-      .rainbow > i:nth-child(7) { color: var(--hue-7); }
-      .rainbow > i:nth-child(8) { color: var(--hue-8); }
+      .rainbow > i:nth-child(1) {
+        color: var(--hue-1);
+      }
+      .rainbow > i:nth-child(2) {
+        color: var(--hue-2);
+      }
+      .rainbow > i:nth-child(3) {
+        color: var(--hue-3);
+      }
+      .rainbow > i:nth-child(4) {
+        color: var(--hue-4);
+      }
+      .rainbow > i:nth-child(5) {
+        color: var(--hue-5);
+      }
+      .rainbow > i:nth-child(6) {
+        color: var(--hue-6);
+      }
+      .rainbow > i:nth-child(7) {
+        color: var(--hue-7);
+      }
+      .rainbow > i:nth-child(8) {
+        color: var(--hue-8);
+      }
       .dress-call .sparks {
         display: inline-flex;
         align-items: center;
@@ -1455,7 +1505,7 @@
    MEDIA WIDENS, MEASURE HOLDS. `.wrap` opens to 47rem so the pictures have
    desktop presence, and everything that is read as prose keeps its 34rem
    line length inside it. 47rem is 752px, which is under venue.jpg's native
-   1200px and dress.jpg's 1400px, so nothing upscales.
+   1200px and dress.jpg's 1280px, so nothing upscales.
 
    `.times` is capped with the prose deliberately, not because it is prose:
    its `1fr auto 1fr` spreads the two times from 272px apart to 376px as the
@@ -1635,7 +1685,7 @@
       <section class="tier-lead">
         <div class="wrap stack">
           <h2 class="sec-title">Welcome!</h2>
-          <p>
+          <p class="times-new-roman">
             Every person here has played a big part in shaping our story, and we
             wouldn&rsquo;t trade that for the world. Our engagement
             wouldn&rsquo;t be the same without you.
@@ -1698,7 +1748,7 @@
               decoding="async"
             />
             <p class="venue-name">Amoun Resort</p>
-            <p class="venue-line">Kilo 31 &middot; North Coast</p>
+            <p class="venue-line">Kilo 36 &middot; North Coast</p>
             <a
               class="btn"
               href="https://maps.app.goo.gl/y2wc2xYJrgC65bH3A"
@@ -1730,7 +1780,7 @@
             <img
               class="sketch sketch-dress"
               src="assets/dress.jpg"
-              alt="A line-up of guests in linen suits and light summer dresses"
+              alt="A line-up of guests in linen suits and colourful gowns"
               loading="lazy"
               decoding="async"
             />
@@ -1738,27 +1788,54 @@
             <div class="dress-lines">
               <p class="dress-call">
                 <span class="sparks" aria-hidden="true">
-                  <svg class="spark spark-sm s-teal" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z" />
+                  <svg
+                    class="spark spark-sm s-teal"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z"
+                    />
                   </svg>
-                  <svg class="spark s-coral" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z" />
+                  <svg
+                    class="spark s-coral"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z"
+                    />
                   </svg>
                 </span>
                 Come in color
                 <span class="sparks" aria-hidden="true">
-                  <svg class="spark s-amber" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z" />
+                  <svg
+                    class="spark s-amber"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z"
+                    />
                   </svg>
-                  <svg class="spark spark-sm s-berry" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z" />
+                  <svg
+                    class="spark spark-sm s-berry"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 1.6c.6 5.1 5.3 9.8 10.4 10.4-5.1.6-9.8 5.3-10.4 10.4-.6-5.1-5.3-9.8-10.4-10.4C6.7 11.4 11.4 6.7 12 1.6Z"
+                    />
                   </svg>
                 </span>
               </p>
-              <p>
+              <p class="times-new-roman">
                 Satin, floral, bold, or soft; wear whatever makes you feel
                 beautiful, as long as it&rsquo;s
-                <span class="rainbow"><i>c</i><i>o</i><i>l</i><i>o</i><i>r</i><i>f</i><i>u</i><i>l</i></span>.
+                <span class="rainbow"
+                  ><i>c</i><i>o</i><i>l</i><i>o</i><i>r</i><i>f</i><i>u</i
+                  ><i>l</i></span
+                >.
               </p>
             </div>
           </div>
@@ -1850,7 +1927,7 @@
         var vw = heroEl.clientWidth,
           vh = heroEl.clientHeight;
         if (!vw || !vh) return;
-        var contain = vw / vh >= FILM_W / FILM_H,
+        var contain = vw >= 700,
           s = contain
             ? Math.min(vw / FILM_W, vh / FILM_H)
             : Math.max(vw / FILM_W, vh / FILM_H);
