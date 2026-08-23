@@ -19,6 +19,7 @@ shot-*.png
 opener-*.png
 
 .DS_Store
+node_modules/
 
 # The build notes reference a private claude.ai preview link and the file's
 # reformatting history. Not for a public repo. Kept local.
@@ -46,6 +47,7 @@ assets/*
 !assets/opener.mp4
 !assets/opener-wide.mp4
 !assets/venue.jpg
+!assets/vercel-analytics.js
 
 # Preview copies written beside index.html by tools/shoot.sh and contrast.py
 # so that sibling assets resolve over file://. Removed on exit.

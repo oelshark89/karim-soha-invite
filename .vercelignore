@@ -12,6 +12,7 @@ shot-*.png
 opener-*.png
 .preview-*.html
 .DS_Store
+node_modules/
 
 assets/src/
 assets/.DS_Store

@@ -1,0 +1,24 @@
+{
+  "name": "karim-soha-invite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Karim and Soha engagement invitation",
+  "scripts": {
+    "build": "esbuild analytics.js --bundle --format=esm --minify --outfile=assets/vercel-analytics.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oelshark89/karim-soha-invite.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/oelshark89/karim-soha-invite/issues"
+  },
+  "homepage": "https://github.com/oelshark89/karim-soha-invite#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
