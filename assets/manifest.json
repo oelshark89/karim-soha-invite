@@ -1,0 +1,232 @@
+{
+ "birdSafeArea": {
+  "clipped_frames": 153,
+  "first_clip": {
+   "clipped": [
+    "left",
+    "right"
+   ],
+   "edges": [
+    "left",
+    "right"
+   ],
+   "frame": 0,
+   "t": 0.0,
+   "x0": 0,
+   "x1": 1079
+  },
+  "first_violation": {
+   "clipped": [
+    "left",
+    "right"
+   ],
+   "edges": [
+    "left",
+    "right"
+   ],
+   "frame": 0,
+   "t": 0.0,
+   "x0": 0,
+   "x1": 1079
+  },
+  "fps": 30.0,
+  "fraction": 0.8,
+  "frame_h": 2400,
+  "frame_w": 1080,
+  "frames_sampled": 153,
+  "frames_with_birds": 153,
+  "marks": [
+   {
+    "clipped": [
+     "left",
+     "right"
+    ],
+    "edges": [
+     "left",
+     "right"
+    ],
+    "frame": 0,
+    "t": 0.0,
+    "x0": 0,
+    "x1": 1079
+   },
+   {
+    "clipped": [
+     "left"
+    ],
+    "edges": [
+     "left",
+     "right"
+    ],
+    "frame": 44,
+    "t": 1.467,
+    "x0": 0,
+    "x1": 1073
+   },
+   {
+    "clipped": [
+     "left",
+     "right"
+    ],
+    "edges": [
+     "left",
+     "right"
+    ],
+    "frame": 88,
+    "t": 2.933,
+    "x0": 0,
+    "x1": 1079
+   },
+   {
+    "clipped": [
+     "right"
+    ],
+    "edges": [
+     "left",
+     "right"
+    ],
+    "frame": 126,
+    "t": 4.2,
+    "x0": 30,
+    "x1": 1079
+   },
+   {
+    "clipped": [
+     "right"
+    ],
+    "edges": [
+     "right"
+    ],
+    "frame": 152,
+    "t": 5.067,
+    "x0": 970,
+    "x1": 1079
+   }
+  ],
+  "respected": false,
+  "safe_x0": 108,
+  "safe_x1": 971,
+  "source": "opener-portrait-2400.mp4",
+  "union_x0": 0,
+  "union_x1": 1079,
+  "violates_left": 143,
+  "violates_right": 153,
+  "violating_frames": 153
+ },
+ "hero": {
+  "duration": 5.0,
+  "file": "hero.mp4",
+  "fps": 30.0,
+  "frames": 150,
+  "height": 1280,
+  "loopSeam": {
+   "meanDelta": 37.58,
+   "verdict": "VISIBLE JUMP"
+  },
+  "source": "hero-white-dress-2160.mp4",
+  "width": 720
+ },
+ "note": "Measured by tools/build-assets.py on every run. Nothing here is written into index.html: the page reads no film-derived constant.",
+ "opener": {
+  "content": {
+   "birds": {
+    "x0": 0.0,
+    "x1": 1.0,
+    "y0": 0.2519,
+    "y1": 0.7218
+   },
+   "frames": 153,
+   "sampledAt": "120x266",
+   "wax": {
+    "x0": 0.0,
+    "x1": 1.0,
+    "y0": 0.2669,
+    "y1": 0.7293
+   }
+  },
+  "duration": 5.1,
+  "file": "opener.mp4",
+  "flapOpen": {
+   "beforeEnd": 0.3,
+   "beforeLastFrame": 0.267,
+   "frame": 144,
+   "hotAt": 0.0542,
+   "hotFloor": 0.01,
+   "hotPeak": 0.0542,
+   "lightEvent": true,
+   "meanAt": 103.6,
+   "peakAt": 253,
+   "rule": "flare",
+   "sampledAt": "145x137",
+   "t": 4.8
+  },
+  "fps": 30.0,
+  "frames": 153,
+  "height": 1600,
+  "lastFrameAt": 5.067,
+  "poster": "opener-poster.jpg",
+  "sealBox": {
+   "frame_h": 1600,
+   "frame_w": 720,
+   "height": 548,
+   "width": 580,
+   "x0": 64,
+   "x1": 643,
+   "y0": 540,
+   "y1": 1087
+  },
+  "source": "opener-portrait-2400.mp4",
+  "width": 720
+ },
+ "openerWide": {
+  "content": {
+   "birds": {
+    "x0": 0.325,
+    "x1": 0.6562,
+    "y0": 0.2222,
+    "y1": 0.75
+   },
+   "frames": 154,
+   "sampledAt": "320x180",
+   "wax": {
+    "x0": 0.325,
+    "x1": 0.6625,
+    "y0": 0.2444,
+    "y1": 0.75
+   }
+  },
+  "duration": 5.133,
+  "file": "opener-wide.mp4",
+  "flapOpen": {
+   "beforeEnd": 0.333,
+   "beforeLastFrame": 0.3,
+   "frame": 144,
+   "hotAt": 0.0522,
+   "hotFloor": 0.01,
+   "hotPeak": 0.0522,
+   "lightEvent": true,
+   "meanAt": 101.6,
+   "peakAt": 251,
+   "rule": "flare",
+   "sampledAt": "98x93",
+   "t": 4.8
+  },
+  "fps": 30.0,
+  "frames": 154,
+  "height": 1080,
+  "lastFrameAt": 5.1,
+  "poster": "opener-wide-poster.jpg",
+  "sealBox": {
+   "frame_h": 1080,
+   "frame_w": 1920,
+   "height": 372,
+   "width": 392,
+   "x0": 760,
+   "x1": 1151,
+   "y0": 364,
+   "y1": 735
+  },
+  "source": "opener-wide-2160.mp4",
+  "width": 1920
+ }
+}
