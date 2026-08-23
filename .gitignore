@@ -50,3 +50,4 @@ assets/*
 # Preview copies written beside index.html by tools/shoot.sh and contrast.py
 # so that sibling assets resolve over file://. Removed on exit.
 .preview-*.html
+.vercel
